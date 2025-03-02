@@ -1,5 +1,13 @@
 
 document.addEventListener("DOMContentLoaded", function () {
+    // 等待 2.5 秒後隱藏 Loading 畫面，顯示主要內容
+    setTimeout(() => {
+        document.getElementById("loading-screen").style.display = "none";
+        let mainContent = document.getElementById("main-content");
+        mainContent.style.opacity = "1";
+        mainContent.style.filter = "blur(0px)"; // 移除模糊
+    }, 2500); // 2.5 秒後執行
+
     const menuList = document.getElementById("menu-list");
     const searchBar = document.getElementById("search-bar");
 
@@ -30,45 +38,25 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    // 讀取 `img/` 目錄中的圖片（需後端支援，如 PHP 或 Node.js）
-    fetch("img/")
-        .then(response => response.text())
-        .then(text => {
-            // 解析 HTML 目錄列表（如果是 Apache/Nginx 可直接回傳目錄內容）
-            const parser = new DOMParser();
-            const doc = parser.parseFromString(text, "text/html");
-            const images = [...doc.querySelectorAll("a[href$='.jpg']")].map(a => a.getAttribute("href"));
-
-            images.forEach(imgPath => {
-                const fileName = imgPath.split("/").pop().replace(".jpg", "");
-                const parts = fileName.split("-");
-                if (parts.length < 3) return; // 確保檔名格式正確
-
-                const category = parts[1]; // 取得分類
-                const name = parts.slice(2).join(" "); // 取得名稱（排除日期）
-
+    // 讀取 `img/` 目錄中的圖片
+    fetch("data.json")
+        .then(response => response.json())
+        .then(images => {
+            const menuList = document.getElementById("menu-list");
+            images.forEach(item => {
                 const imgElement = document.createElement("div");
-                imgElement.classList.add("col-md-6", "col-lg-4", "my-3", "menu-item");
-                imgElement.setAttribute("data-category", category);
-                imgElement.setAttribute("data-name", name);
+                imgElement.classList.add("col-md-5", "col-xl-3", "my-3", "menu-item");
+                imgElement.setAttribute("data-category", item.category);
+                imgElement.setAttribute("data-name", item.name.toLowerCase());
 
                 imgElement.innerHTML = `
-                    <img src="img/${fileName}.jpg" alt="${name}">
-                    <h4>${name}</h4>
-                    <p class="description">載入中...</p>
-                `;
+                <img src="${item.file}" alt="${item.name}">
+                <h4>${item.name}</h4>
+                <p>${item.description}</p>
+            `;
 
                 menuList.appendChild(imgElement);
-
-                // 讀取圖片的 EXIF 註解
-                const img = imgElement.querySelector("img");
-                img.onload = function () {
-                    EXIF.getData(img, function () {
-                        const description = EXIF.getTag(this, "ImageDescription") || "無註解";
-                        imgElement.querySelector(".description").textContent = description;
-                    });
-                };
             });
         })
-        .catch(error => console.error("無法載入圖片目錄", error));
+        .catch(error => console.error("無法載入圖片資料", error));
 });

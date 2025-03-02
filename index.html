@@ -17,24 +17,33 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/exif-js/2.3.0/exif.min.js"></script> <!-- 用於讀取圖片註解 -->
 </head>
 <body>
-    <div class="container text-center my-4 content">
-        <h1 class="fw-bold">🍸 Bar Temperature</h1>
+    <!-- Loading 畫面 -->
+    <div id="loading-screen">
+        <img src="loading.png" alt="Loading...">
+    </div>
 
-        <!-- 搜尋框 -->
-        <label for="search-bar"></label><input type="text" id="search-bar" class="form-control my-3" placeholder="🔍 搜尋調酒名稱">
+    <!-- 主要內容區塊（隱藏直到載入完成） -->
+    <div id="main-content" class="content">
+        <h1 class="fw-bold" style="margin-top: 1rem;justify-self: center;color: #fff;text-shadow: 4px 4px 4px rgb(0 0 0);">🍸 Bar Temperature</h1>
 
-        <!-- 類別按鈕 -->
-        <div class="btn-group my-3" role="group">
-            <button class="btn btn-outline-light menu-category" data-category="all">全部</button>
-            <button class="btn btn-outline-light menu-category" data-category="classic">Classic</button>
-            <button class="btn btn-outline-light menu-category" data-category="cocktail">Cocktail</button>
-            <button class="btn btn-outline-light menu-category" data-category="special">Special</button>
-            <button class="btn btn-outline-light menu-category" data-category="shot">Shot</button>
-        </div>
+        <div class="container text-center my-4 content">
 
-        <!-- 調酒菜單 -->
-        <div class="row" id="menu-list">
-            <!-- 這裡會自動載入圖片 -->
+            <!-- 搜尋框 -->
+            <label for="search-bar"></label><input type="text" id="search-bar" class="form-control my-3" placeholder="🔍 搜尋調酒名稱">
+
+            <!-- 類別按鈕 -->
+            <div class="btn-group my-3" role="group">
+                <button class="btn btn-outline-light menu-category" data-category="all">全部</button>
+                <button class="btn btn-outline-light menu-category" data-category="classic">Classic</button>
+                <button class="btn btn-outline-light menu-category" data-category="cocktail">Cocktail</button>
+                <button class="btn btn-outline-light menu-category" data-category="special">Special</button>
+                <button class="btn btn-outline-light menu-category" data-category="shot">Shot</button>
+            </div>
+
+            <!-- 調酒菜單 -->
+            <div class="row" id="menu-list" style="justify-content: center;">
+                <!-- 這裡會自動載入圖片 -->
+            </div>
         </div>
     </div>
 

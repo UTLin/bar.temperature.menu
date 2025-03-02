@@ -25,23 +25,20 @@ body {
     color: white;
 }
 
-/* 遮罩層，讓背景變暗 */
+/* 遮罩層，讓背景變暗但不影響圖片 */
 body::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6); /* 半透明黑色遮罩 */
-    backdrop-filter: blur(8px); /* 模糊背景 */
-    z-index: 1;
+    display: none;
 }
 
 /* 讓內容在遮罩之上 */
 .content {
     position: relative;
     z-index: 2;
+    background: rgba(0, 0, 0, 0.3); /* 半透明黑色背景 */
+    backdrop-filter: blur(12px); /* 只讓菜單區塊模糊 */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 /*
@@ -188,29 +185,110 @@ textarea {
     clear: both;
 }
 
+/* Loading 畫面 */
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85); /* 深色背景 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* Loading 畫面中的圖片 */
+#loading-screen img {
+    width: 100px;
+    height: auto;
+    animation: fadeIn 1s ease-in-out infinite alternate; /* 讓圖片有漸變效果 */
+}
+
+/* 頁面主內容（初始時隱藏並模糊） */
+#main-content {
+    opacity: 0;
+    filter: blur(10px); /* 預設模糊效果 */
+    transition: opacity 1s ease-in-out, filter 1.5s ease-in-out;
+}
+
 #search-bar {
     width: 100%;
     max-width: 500px;
-    margin: 0 auto;
+    margin: 10px auto;
     padding: 10px;
     font-size: 1.2em;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+#search-bar::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* 調整分類按鈕 */
+.btn-group .btn {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: none;
+}
+
+.btn-group .btn:hover,
+.btn-group .btn.active {
+    background: rgba(255, 255, 255, 0.4);
+    color: black;
 }
 
 .menu-item {
     background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
+    border-radius: 15px;
     overflow: hidden;
     padding: 15px;
     text-align: center;
     backdrop-filter: blur(5px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s ease-in-out;
+    margin: 15px; /* 增加間距 */
 }
+
+/* 滑鼠懸停時增加縮放效果 */
+.menu-item:hover {
+    transform: scale(1.05);
+}
+
+/* 圖片樣式 */
 .menu-item img {
     width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
+    height: 400px;
+    object-fit: contain;
+    border-radius: 10px;
 }
+
+/* 調酒名稱 */
+.menu-item h4 {
+    margin-top: 10px;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #fff; /* 讓名稱變成白色 */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* 增加陰影，讓字更清楚 */
+}
+
+/* 註解文字 */
+.menu-item p {
+    font-size: 1em;
+    color: rgba(255, 255, 255, 0.8); /* 讓註解稍微變亮 */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    margin-bottom: 5px;
+}
+
 .menu-category {
     cursor: pointer;
 }
@@ -299,3 +377,12 @@ textarea {
     }
 }
 
+/* 漸進式出現動畫 */
+@keyframes fadeIn {
+    from {
+        opacity: 0.5;
+    }
+    to {
+        opacity: 1;
+    }
+}
