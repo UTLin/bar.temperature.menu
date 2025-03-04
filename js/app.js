@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
         .then(images => {
             images.forEach(item => {
                 const imgElement = document.createElement("div");
-                imgElement.classList.add("col-md-5", "col-xl-3", "my-3", "menu-item");
+                imgElement.classList.add("col-5", "col-md-5", "col-lg-3", "col-xl-3", "col-xxl-2", "my-3", "menu-item");
                 imgElement.setAttribute("data-category", item.category);
                 imgElement.setAttribute("data-name", item.name.toLowerCase());
 
