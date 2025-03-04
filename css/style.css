@@ -293,6 +293,45 @@ textarea {
     cursor: pointer;
 }
 
+.thumbnail {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.thumbnail:hover {
+    opacity: 0.7;
+}
+
+/* Lightbox */
+.lightbox {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    z-index: 3;
+}
+
+.lightbox-content {
+    margin-top: 5%;
+    max-width: 80%;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.

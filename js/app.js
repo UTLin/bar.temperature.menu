@@ -42,7 +42,6 @@ document.addEventListener("DOMContentLoaded", function () {
     fetch("data.json")
         .then(response => response.json())
         .then(images => {
-            const menuList = document.getElementById("menu-list");
             images.forEach(item => {
                 const imgElement = document.createElement("div");
                 imgElement.classList.add("col-md-5", "col-xl-3", "my-3", "menu-item");
@@ -50,12 +49,24 @@ document.addEventListener("DOMContentLoaded", function () {
                 imgElement.setAttribute("data-name", item.name.toLowerCase());
 
                 imgElement.innerHTML = `
-                <img src="${item.file}" alt="${item.name}">
-                <h4>${item.name}</h4>
-                <p>${item.description}</p>
-            `;
+                    <img src="${item.thumbnail}" data-fullsize="${item.file}" class="thumbnail" alt="${item.name}">
+                    <h4>${item.name}</h4>
+                    <p>${item.description}</p>
+                `;
 
                 menuList.appendChild(imgElement);
+            });
+
+            document.querySelectorAll(".thumbnail").forEach(img => {
+                img.addEventListener("click", function () {
+                    let fullsizeImg = this.dataset.fullsize;
+                    document.getElementById("lightbox-img").src = fullsizeImg;
+                    document.getElementById("lightbox").style.display = "block";
+                });
+            });
+
+            document.querySelector(".close").addEventListener("click", function () {
+                document.getElementById("lightbox").style.display = "none";
             });
         })
         .catch(error => console.error("無法載入圖片資料", error));

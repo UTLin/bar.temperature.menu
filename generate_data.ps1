@@ -3,7 +3,8 @@ $OutputEncoding = [System.Text.Encoding]::UTF8
 [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 
 # Define directories and files
-$imgDir = "menuImg"
+$imgDir = "menuImg\fullsize"
+$thumbDir = "menuImg/thumbnails"
 $jsonFile = "data.json"
 $errorLog = "error.log"
 
@@ -12,9 +13,11 @@ Set-Content -Path $errorLog -Value "" -Encoding UTF8 -NoNewline
 
 # ✅ Check if the "menuImg" directory exists
 if (-Not (Test-Path $imgDir)) {
-    $msg = "[ERROR] The directory '$imgDir' does not exist. Please check the folder name."
-    Add-Content -Path $errorLog -Value $msg -Encoding UTF8 -NoNewline
-    Start-Process notepad.exe $errorLog
+    Add-Content -Path $errorLog -Value "[ERROR] The folder '$imgDir' does not exist." -Encoding UTF8 -NoNewline
+    exit
+}
+if (-Not (Test-Path $thumbDir)) {
+    Add-Content -Path $errorLog -Value "[ERROR] The folder '$thumbDir' does not exist." -Encoding UTF8 -NoNewline
     exit
 }
 
@@ -23,9 +26,7 @@ $images = Get-ChildItem -Path $imgDir -Filter "*.jpg"
 
 # ✅ If no JPG files are found, log a warning
 if ($images.Count -eq 0) {
-    $msg = "[WARNING] No JPG files found in the 'menuImg' directory."
-    Add-Content -Path $errorLog -Value $msg -Encoding UTF8 -NoNewline
-    Start-Process notepad.exe $errorLog
+    Add-Content -Path $errorLog -Value "[WARNING] No images found in '$imgDir'." -Encoding UTF8 -NoNewline
     exit
 }
 
@@ -33,31 +34,35 @@ $jsonArray = @()
 
 foreach ($image in $images) {
     try {
-        $filename = $image.BaseName
+        $filename = $image.BaseName -replace "_", "-"
         $parts = $filename -split "-"
 
         # ✅ Check filename format (date-category-name.jpg)
         if ($parts.Length -lt 3) {
-            $msg = "[ERROR] Invalid filename format: '$filename' (Expected format: date-category-name.jpg)"
-            Add-Content -Path $errorLog -Value $msg -Encoding UTF8 -NoNewline
-            continue
+            throw "[ERROR] Invalid filename format: '$filename'"
         }
 
         $date = $parts[0]
-        $category = $parts[1]
-        $name = ($parts[2..($parts.Length - 1)] -join " ")  # Merge remaining parts as the name
+        $category = $parts[1].ToLower()
+        $name = ($parts[2..($parts.Length - 1)] -join " ")
+
+        # check thumb imges is exist
+        $thumbPath = "$thumbDir/$($image.Name)"
+        if (-Not (Test-Path $thumbPath)) {
+            throw "[ERROR] Missing thumbnail for '$($image.Name)'"
+        }
 
         # Create JSON object
         $jsonArray += @{
             file = "$imgDir/$($image.Name)"
+            thumbnail = "$thumbPath"
             category = $category
             name = $name
             description = "No description"
         }
     } catch {
         # ✅ Log filename parsing errors
-        $msg = "[ERROR] Failed to parse file '$($image.Name)': " + $_.Exception.Message
-        Add-Content -Path $errorLog -Value $msg -Encoding UTF8 -NoNewline
+        Add-Content -Path $errorLog -Value "[ERROR] $_" -Encoding UTF8 -NoNewline
     }
 }
 
@@ -66,8 +71,4 @@ $jsonOutput = $jsonArray | ConvertTo-Json -Depth 2 -Compress
 [System.IO.File]::WriteAllText($jsonFile, $jsonOutput, [System.Text.Encoding]::UTF8)
 
 # ✅ Log success message instead of displaying directly
-$msg = "[SUCCESS] data.json has been successfully generated!"
-Add-Content -Path $errorLog -Value $msg -Encoding UTF8 -NoNewline
-
-# ✅ Open error.log to check results
-Start-Process notepad.exe $errorLog
+Add-Content -Path $errorLog -Value "[SUCCESS] data.json has been generated!" -Encoding UTF8 -NoNewline
