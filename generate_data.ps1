@@ -1,17 +1,17 @@
-# Force PowerShell to use UTF-8 (fixes encoding issues)
+# Force PowerShell to use UTF-8 encoding
 $OutputEncoding = [System.Text.Encoding]::UTF8
 [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 
-# Define directories and files
-$imgDir = "menuImg\fullsize"
+# Define directories
+$imgDir = "menuImg/fullsize"
 $thumbDir = "menuImg/thumbnails"
 $jsonFile = "data.json"
 $errorLog = "error.log"
 
-# Clear the error log (Using UTF8 instead of utf8NoBOM)
+# Clear the error log before execution
 Set-Content -Path $errorLog -Value "" -Encoding UTF8 -NoNewline
 
-# ✅ Check if the "menuImg" directory exists
+# Ensure directories exist
 if (-Not (Test-Path $imgDir)) {
     Add-Content -Path $errorLog -Value "[ERROR] The folder '$imgDir' does not exist." -Encoding UTF8 -NoNewline
     exit
@@ -21,10 +21,10 @@ if (-Not (Test-Path $thumbDir)) {
     exit
 }
 
-# Get all JPG files from "menuImg" folder
+# Get all JPG files in the fullsize directory
 $images = Get-ChildItem -Path $imgDir -Filter "*.jpg"
 
-# ✅ If no JPG files are found, log a warning
+# If no images found, log a warning
 if ($images.Count -eq 0) {
     Add-Content -Path $errorLog -Value "[WARNING] No images found in '$imgDir'." -Encoding UTF8 -NoNewline
     exit
@@ -34,41 +34,52 @@ $jsonArray = @()
 
 foreach ($image in $images) {
     try {
-        $filename = $image.BaseName -replace "_", "-"
-        $parts = $filename -split "-"
+        $filename = $image.BaseName
+        $fullsizePath = "$imgDir/$($image.Name)"
+        $thumbPath = "$thumbDir/$($image.Name)"
 
-        # ✅ Check filename format (date-category-name.jpg)
-        if ($parts.Length -lt 3) {
-            throw "[ERROR] Invalid filename format: '$filename'"
+        # Extract metadata from the image file
+        $shell = New-Object -ComObject Shell.Application
+        $folder = $shell.Namespace((Get-Item $fullsizePath).DirectoryName)
+        $file = $folder.ParseName((Get-Item $fullsizePath).Name)
+
+        # Read tags (used for category) and comments (used for description)
+        $category = @()
+        $description = "No description"
+
+        $tags = $folder.GetDetailsOf($file, 18)  # "標籤 (Tags)" field
+        if ($tags -ne $null -and $tags -ne "") {
+            $category = $tags -split "; "  # Support multiple categories
         }
 
-        $date = $parts[0]
-        $category = $parts[1].ToLower()
-        $name = ($parts[2..($parts.Length - 1)] -join " ")
+        $comment = $folder.GetDetailsOf($file, 24)  # "註解 (Comments)" field
+        if ($comment -ne $null -and $comment -ne "") {
+            $description = $comment
+        }
 
-        # check thumb imges is exist
-        $thumbPath = "$thumbDir/$($image.Name)"
+        # Ensure the thumbnail exists
         if (-Not (Test-Path $thumbPath)) {
             throw "[ERROR] Missing thumbnail for '$($image.Name)'"
         }
 
-        # Create JSON object
+        # Construct JSON object
         $jsonArray += @{
-            file = "$imgDir/$($image.Name)"
-            thumbnail = "$thumbPath"
+            file = $fullsizePath
+            thumbnail = $thumbPath
             category = $category
-            name = $name
-            description = "No description"
+            name = $filename  # Keep filename as name
+            description = $description
         }
-    } catch {
-        # ✅ Log filename parsing errors
+    }
+    catch {
+        # Log any errors encountered during metadata extraction
         Add-Content -Path $errorLog -Value "[ERROR] $_" -Encoding UTF8 -NoNewline
     }
 }
 
-# Convert to JSON and save (Using UTF8 instead of utf8NoBOM)
+# Convert to JSON and save (Ensure UTF-8 encoding)
 $jsonOutput = $jsonArray | ConvertTo-Json -Depth 2 -Compress
 [System.IO.File]::WriteAllText($jsonFile, $jsonOutput, [System.Text.Encoding]::UTF8)
 
-# ✅ Log success message instead of displaying directly
+# Log success message
 Add-Content -Path $errorLog -Value "[SUCCESS] data.json has been generated!" -Encoding UTF8 -NoNewline
