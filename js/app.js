@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
     fetch("weekly_tags.json")
         .then(response => response.json())
         .then(weeklyData => {
-            weeklyTags = weeklyData.weekly || [];
+            weeklyTags = weeklyData.tags || [];
             console.log("本周水果標籤:", weeklyTags);
 
             // 讀取 `data.json`，獲取調酒資訊
