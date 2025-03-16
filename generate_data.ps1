@@ -72,6 +72,11 @@ foreach ($image in $images) {
         $folder = $shell.Namespace((Get-Item $fullsizePath).DirectoryName)
         $file = $folder.ParseName((Get-Item $fullsizePath).Name)
 
+        $title = $folder.GetDetailsOf($file, 21)  # Index 21 typically holds the Title metadata
+        if (-not [string]::IsNullOrWhiteSpace($title)) {
+            $filename = $title
+        }
+
         $tags = $folder.GetDetailsOf($file, 18)  # "標籤 (Tags)" field
         if ($tags -ne $null -and $tags -ne "") {
             $category = $tags -split "; "  # Support multiple categories
