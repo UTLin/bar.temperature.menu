@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     <img src="${item.thumbnail}" data-fullsize="${item.file}" class="thumbnail" alt="${item.name}">
                     <h4>${item.name}</h4>
                     <p><b>Category:</b> ${categoryText}</p>
-                    <p><b>Description:</b> ${item.description}</p>
+                    <p>${item.description}</p>
                 `;
 
                 menuList.appendChild(imgElement);

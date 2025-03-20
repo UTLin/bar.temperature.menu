@@ -66,7 +66,7 @@ foreach ($image in $images) {
 
         # Extract metadata from the image file
         $category = @()
-        $description = "No description"
+        $description = ""
 
         $shell = New-Object -ComObject Shell.Application
         $folder = $shell.Namespace((Get-Item $fullsizePath).DirectoryName)
