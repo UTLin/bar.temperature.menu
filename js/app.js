@@ -84,6 +84,7 @@ document.addEventListener("DOMContentLoaded", function () {
             // 篩選功能（支援多標籤）
             document.querySelectorAll(".menu-category").forEach(button => {
                 button.addEventListener("click", function () {
+                    searchBar.value = ""; // ✅ 清除搜尋欄內容
                     let selectedCategory = this.dataset.category.toLowerCase();
                     filterMenu(selectedCategory);
                 });
@@ -125,4 +126,23 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     }
+
+    // search-bar 搜尋邏輯
+    searchBar.addEventListener("input", function () {
+        const keyword = this.value.trim().toLowerCase();
+
+        document.querySelectorAll(".menu-item").forEach(item => {
+            const name = item.getAttribute("data-name") || "";
+            const category = item.getAttribute("data-category") || "";
+            const searchableText = `${name} ${category}`.toLowerCase();
+
+            if (searchableText.includes(keyword)) {
+                item.style.display = "block";
+            } else {
+                item.style.display = "none";
+            }
+        });
+    });
+
+
 });
