@@ -14,6 +14,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const searchBar = document.getElementById("search-bar");
 
     let weeklyTags = [];
+    // 建立 Set 來記錄實際出現過的 weekly tag
+    const foundWeeklyTags = new Set();
 
     // 讀取 `weekly_tags.json`，獲取本周水果標籤
     fetch("weekly_tags.json")
@@ -28,18 +30,27 @@ document.addEventListener("DOMContentLoaded", function () {
         .then(response => response.json())
         .then(images => {
             images.forEach(item => {
-                // **確保 category 是陣列**
+                // 確保 category 是陣列
                 let categories = Array.isArray(item.category) ? item.category : [];
 
-                // **如果符合 weeklyTags，則添加 "本周水果" 標籤**
-                if (categories.some(tag => weeklyTags.includes(tag))) {
+                // 如果符合 weeklyTags，則添加 "本周水果" 標籤
+                if (categories.some(tag => weeklyTags.includes(tag)) &&
+                    categories.includes("signature") &&
+                    !categories.includes("shot")) {
                     categories.push("weekly");
+
+                    // 紀錄有被用到的 tag
+                    categories.forEach(tag => {
+                        if (weeklyTags.includes(tag)) {
+                            foundWeeklyTags.add(tag);
+                        }
+                    });
                 }
 
-                // **將類別轉為字串格式**
+                // 將類別轉為字串格式
                 const categoryString = categories.join(",");
 
-                // **建立調酒卡片**
+                // 建立調酒卡片
                 const imgElement = document.createElement("div");
                 imgElement.classList.add("col-5", "col-md-5", "col-lg-3", "col-xl-3", "col-xxl-2", "my-3", "menu-item");
                 imgElement.setAttribute("data-category", categoryString);
@@ -48,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 let categoryText = categories.join(", ");
 
                 imgElement.innerHTML = `
-                    <img src="${item.thumbnail}" data-fullsize="${item.file}" class="thumbnail" alt="${item.name}">
+                    <img loading="lazy" src="${item.thumbnail}" data-fullsize="${item.file}" class="thumbnail" alt="${item.name}">
                     <h4>${item.name}</h4>
                     <p><b>Category:</b> ${categoryText}</p>
                     <p>${item.description}</p>
@@ -57,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 menuList.appendChild(imgElement);
             });
 
-            // **點擊縮圖時載入高解析度圖片**
+            // 點擊縮圖時載入高解析度圖片
             document.querySelectorAll(".thumbnail").forEach(img => {
                 img.addEventListener("click", function () {
                     document.getElementById("lightbox-img").src = this.dataset.fullsize;
@@ -65,12 +76,12 @@ document.addEventListener("DOMContentLoaded", function () {
                 });
             });
 
-            // **關閉 Lightbox**
+            // 關閉 Lightbox
             document.querySelector(".close").addEventListener("click", function () {
                 document.getElementById("lightbox").style.display = "none";
             });
 
-            // **篩選功能（支援多標籤）**
+            // 篩選功能（支援多標籤）
             document.querySelectorAll(".menu-category").forEach(button => {
                 button.addEventListener("click", function () {
                     let selectedCategory = this.dataset.category.toLowerCase();
@@ -80,6 +91,25 @@ document.addEventListener("DOMContentLoaded", function () {
 
             // ✅ 預設篩選「本周水果」
             filterMenu("weekly");
+
+            // 檢查沒出現的 weekly tags
+            const missingTags = weeklyTags.filter(tag => !foundWeeklyTags.has(tag));
+
+            // 加入預設卡片
+            missingTags.forEach(tag => {
+                const placeholder = document.createElement("div");
+                placeholder.classList.add("col-5", "col-md-5", "col-lg-3", "col-xl-3", "col-xxl-2", "my-3", "menu-item");
+                placeholder.setAttribute("data-category", "weekly");
+                placeholder.setAttribute("data-name", tag.toLowerCase());
+
+                placeholder.innerHTML = `
+                    <img loading="lazy" src="img/default-drink.jpg" class="thumbnail" alt="No drink found">
+                    <h4>${tag}</h4>
+                    <p>圖片還在製作中</p>
+                `;
+
+                menuList.appendChild(placeholder);
+            });
         })
         .catch(error => console.error("⚠️ 無法載入資料", error));
 
