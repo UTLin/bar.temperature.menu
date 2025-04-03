@@ -153,6 +153,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 menuList.appendChild(placeholder);
             });
 
+            renderAccountSelector();
             renderOrderList();
         })
         .catch(error => console.error("⚠️ 無法載入資料", error));
@@ -188,18 +189,41 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // 儲存點酒紀錄到 localStorage
-    function saveOrder(data) {
-        localStorage.setItem("drinkOrders", JSON.stringify(data));
+    let currentAccount = "自己";
+    // 初始化帳戶資料
+    const book = JSON.parse(localStorage.getItem("drinkOrderBook") || "{}");
+    if (Object.keys(book).length === 0) {
+        book[currentAccount] = {};
+        localStorage.setItem("drinkOrderBook", JSON.stringify(book));
+    }
+    function saveOrderBook(book) {
+        localStorage.setItem("drinkOrderBook", JSON.stringify(book));
     }
 
     // 取得紀錄
-    function loadOrder() {
-        return JSON.parse(localStorage.getItem("drinkOrders") || "{}");
+    function loadOrderBook() {
+        return JSON.parse(localStorage.getItem("drinkOrderBook") || "{}");
+    }
+
+    // 顯示帳號
+    function renderAccountSelector() {
+        const book = loadOrderBook();
+        const selector = document.getElementById("account-selector");
+        selector.innerHTML = "";
+
+        Object.keys(book).forEach(account => {
+            const option = document.createElement("option");
+            option.value = account;
+            option.textContent = account;
+            if (account === currentAccount) option.selected = true;
+            selector.appendChild(option);
+        });
     }
 
     // 顯示紀錄
     function renderOrderList() {
-        const orders = loadOrder();
+        const book = loadOrderBook();
+        const orders = book[currentAccount] || {};
         const orderList = document.getElementById("order-list");
         orderList.innerHTML = "";
 
@@ -228,15 +252,21 @@ document.addEventListener("DOMContentLoaded", function () {
         // 單項刪除
         if (e.target.classList.contains("delete-item")) {
             const name = e.target.dataset.name;
-            const orders = loadOrder();
-            delete orders[name];
-            saveOrder(orders);
-            renderOrderList();
+            if (!confirm(`確定要從「${currentAccount}」的紀錄中移除「${name}」嗎？`)) return;
+            const book = loadOrderBook();
+            if (book[currentAccount] && book[currentAccount][name] !== undefined) {
+                delete book[currentAccount][name];
+                saveOrderBook(book);
+                renderOrderList();
+            }
         }
 
         // 清空
         if (e.target.id === "clear-orders") {
-            localStorage.removeItem("drinkOrders");
+            if (!confirm(`確定要清除「${currentAccount}」的點酒紀錄嗎？`)) return;
+            const book = loadOrderBook();
+            book[currentAccount] = {}; // 🔄 清空目前帳戶紀錄
+            saveOrderBook(book);
             renderOrderList();
         }
 
@@ -256,13 +286,51 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // modal 確認後新增點酒資料
         if (e.target.id === "confirmAdd" && pendingDrinkName) {
+            // const qty = parseInt(document.getElementById("confirmQty").value, 10);
+            // const orders = loadOrder();
+            // orders[pendingDrinkName] = (orders[pendingDrinkName] || 0) + qty;
+            // saveOrder(orders);
+            // renderOrderList();
             const qty = parseInt(document.getElementById("confirmQty").value, 10);
-            const orders = loadOrder();
-            orders[pendingDrinkName] = (orders[pendingDrinkName] || 0) + qty;
-            saveOrder(orders);
+            const book = loadOrderBook();
+            if (!book[currentAccount]) book[currentAccount] = {};
+            book[currentAccount][pendingDrinkName] = (book[currentAccount][pendingDrinkName] || 0) + qty;
+            saveOrderBook(book);
             renderOrderList();
+
             pendingDrinkName = null;
             bootstrap.Modal.getInstance(document.getElementById("confirmModal")).hide();
         }
+
+
+        if (e.target.id === "add-account") {
+            const name = prompt("請輸入新帳戶名稱");
+            if (!name) return;
+            const book = loadOrderBook();
+            if (!book[name]) {
+                book[name] = {};
+                saveOrderBook(book);
+                currentAccount = name;
+                renderAccountSelector();
+                renderOrderList();
+            }
+        }
+
+        if (e.target.id === "delete-account") {
+            if (!confirm(`確定要刪除帳戶「${currentAccount}」嗎？資料將永久移除。`)) return;
+            const book = loadOrderBook();
+            delete book[currentAccount];
+            const remaining = Object.keys(book);
+            currentAccount = remaining[0] || "自己";
+            if (!book[currentAccount]) book[currentAccount] = {};
+            saveOrderBook(book);
+            renderAccountSelector();
+            renderOrderList();
+        }
+    });
+
+    document.getElementById("account-selector").addEventListener("change", (e) => {
+        currentAccount = e.target.value;
+        renderOrderList();
     });
 });

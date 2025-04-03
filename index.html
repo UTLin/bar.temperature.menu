@@ -68,6 +68,16 @@
         </div>
         <div style="width: 100%;padding: 1rem;margin-left: 2rem;background-color: #222;box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);">
             <h5 class="fw-bold">🧾 點酒紀錄</h5>
+            <!-- 👥 帳戶管理 -->
+            <div class="mb-3">
+                <label for="account-selector" class="form-label fw-bold">目前帳戶</label>
+                <div class="d-flex gap-2 mb-2">
+                    <select id="account-selector" class="form-select form-select-sm"></select>
+                    <button class="btn btn-sm btn-outline-light" id="add-account">➕</button>
+                    <button class="btn btn-sm btn-outline-danger" id="delete-account">🗑️</button>
+                </div>
+            </div>
+            <!-- 點酒紀錄清單 -->
             <div id="order-list" class="mb-3"></div>
             <button class="btn btn-warning btn-sm w-100" id="clear-orders">🧹 清空紀錄</button>
         </div>

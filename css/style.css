@@ -328,7 +328,7 @@ textarea {
 .close {
     position: absolute;
     top: 20px;
-    right: 100px;
+    right: 50px;
     font-size: 40px;
     color: white;
     cursor: pointer;
