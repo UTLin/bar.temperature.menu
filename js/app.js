@@ -212,13 +212,14 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // 加入點酒
+    let pendingDrinkName = null;
     document.addEventListener("click", function (e) {
         if (e.target.classList.contains("add-to-order")) {
-            const name = e.target.dataset.name;
-            const orders = loadOrder();
-            orders[name] = (orders[name] || 0) + 1;
-            saveOrder(orders);
-            renderOrderList();
+            // 點酒按鈕觸發 modal
+            pendingDrinkName = e.target.dataset.name;
+            document.getElementById("confirmText").textContent = `你確定要點這杯「${pendingDrinkName}」嗎？`;
+            document.getElementById("confirmQty").value = "1";
+            new bootstrap.Modal(document.getElementById("confirmModal")).show();
         }
 
         // 單項刪除
@@ -234,6 +235,31 @@ document.addEventListener("DOMContentLoaded", function () {
         if (e.target.id === "clear-orders") {
             localStorage.removeItem("drinkOrders");
             renderOrderList();
+        }
+
+        // modal 增加數量
+        if (e.target.id === "qty-increase") {
+            const qtyInput = document.getElementById("confirmQty");
+            let val = parseInt(qtyInput.value) || 1;
+            if (val < 20) qtyInput.value = val + 1;
+        }
+
+        // modal 減少數量
+        if (e.target.id === "qty-decrease") {
+            const qtyInput = document.getElementById("confirmQty");
+            let val = parseInt(qtyInput.value) || 1;
+            if (val > 1) qtyInput.value = val - 1;
+        }
+
+        // modal 確認後新增點酒資料
+        if (e.target.id === "confirmAdd" && pendingDrinkName) {
+            const qty = parseInt(document.getElementById("confirmQty").value, 10);
+            const orders = loadOrder();
+            orders[pendingDrinkName] = (orders[pendingDrinkName] || 0) + qty;
+            saveOrder(orders);
+            renderOrderList();
+            pendingDrinkName = null;
+            bootstrap.Modal.getInstance(document.getElementById("confirmModal")).hide();
         }
     });
 });

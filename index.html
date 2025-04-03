@@ -62,7 +62,7 @@
 
     <!-- 點酒紀錄側邊欄 -->
     <div id="order-sidebar">
-        <div style="align-content: center;">
+        <div style="align-content: end;margin-bottom: 5vh;">
             <!-- Toggle Button -->
             <button class="btn" id="toggle-order">📋</button>
         </div>
@@ -70,6 +70,31 @@
             <h5 class="fw-bold">🧾 點酒紀錄</h5>
             <div id="order-list" class="mb-3"></div>
             <button class="btn btn-warning btn-sm w-100" id="clear-orders">🧹 清空紀錄</button>
+        </div>
+    </div>
+
+    <!-- 點酒確認 Modal -->
+    <div class="modal fade" id="confirmModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-dark">
+                <div class="modal-header">
+                    <h5 class="modal-title">點酒確認</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="關閉"></button>
+                </div>
+                <div class="modal-body">
+                    <p id="confirmText">你確定要點這杯嗎？</p>
+                    <p>備註: 這沒有實際點酒的功能，請直接跟Bartender點酒，本功能只給你紀錄喝了多少。</p>
+                    <div class="d-flex justify-content-center align-items-center my-2">
+                        <button class="btn btn-outline-secondary btn-sm" id="qty-decrease">➖</button>
+                        <input type="number" id="confirmQty" class="form-control mx-2 text-center" value="1" min="1" max="20" style="width: 60px;">
+                        <button class="btn btn-outline-secondary btn-sm" id="qty-increase">➕</button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-primary" id="confirmAdd" style="background: #ffcc00;">確定</button>
+                </div>
+            </div>
         </div>
     </div>
 </body>

@@ -353,7 +353,7 @@ textarea {
 
 #order-list {
     overflow: auto;
-    height: 90%;
+    height: 80%;
     padding-right: 1rem;
 }
 
@@ -373,6 +373,59 @@ textarea {
     background: rgba(255, 255, 255, 0.25);
     transform: scale(1.1);
     color: #ffd700;
+}
+
+/* ==========================================================================
+   Model警示視窗的CSS動畫
+   ========================================================================== */
+#confirmModal .modal-content {
+    background: rgba(0, 0, 0, 0.85);
+    color: white;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+}
+
+#confirmModal .modal-header .modal-title {
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+}
+
+#confirmModal .modal-body p {
+    margin-bottom: 0.8rem;
+    color: #eee;
+    font-size: 1rem;
+}
+
+#confirmModal #confirmQty,
+#confirmModal #qty-increase,
+#confirmModal #qty-decrease {
+    background-color: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.3);
+    color: #fff;
+}
+
+#qty-increase,
+#qty-decrease {
+    transition: all 0.2s ease;
+}
+
+#qty-increase:hover,
+#qty-decrease:hover {
+    background: rgba(255,255,255,0.3);
+    color: black;
+}
+
+#confirmModal .btn-close {
+    filter: invert(1) brightness(150%);
+    opacity: 0.9;
+}
+
+#confirmModal .btn-close:hover {
+    filter: invert(1) brightness(250%);
+    opacity: 1;
 }
 
 
