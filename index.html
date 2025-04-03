@@ -41,6 +41,12 @@
                 <button class="btn btn-outline-light menu-category" data-category="shot">Shot</button>
             </div>
 
+            <!-- 本周水果敘述 -->
+            <div style="display: flex;justify-content: center;">
+                <div id="weekly-desc-icon" class="my-3" style="font-size: x-large;">🍍</div>
+                <div id="weekly-desc" class="text-white fw-bold my-3" style="font-size: x-large;"></div>
+            </div>
+
             <!-- 調酒菜單 -->
             <div class="row" id="menu-list" style="justify-content: center;">
                 <!-- 這裡會自動載入圖片 -->
@@ -53,7 +59,18 @@
         <span class="close">&times;</span>
         <img class="lightbox-content" id="lightbox-img" alt="lightbox-img">
     </div>
+
+    <!-- 點酒紀錄側邊欄 -->
+    <div id="order-sidebar">
+        <div style="align-content: center;">
+            <!-- Toggle Button -->
+            <button class="btn" id="toggle-order">📋</button>
+        </div>
+        <div style="width: 100%;padding: 1rem;margin-left: 2rem;background-color: #222;box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);">
+            <h5 class="fw-bold">🧾 點酒紀錄</h5>
+            <div id="order-list" class="mb-3"></div>
+            <button class="btn btn-warning btn-sm w-100" id="clear-orders">🧹 清空紀錄</button>
+        </div>
+    </div>
 </body>
-
-
 </html>

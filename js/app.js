@@ -12,10 +12,32 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const menuList = document.getElementById("menu-list");
     const searchBar = document.getElementById("search-bar");
-
     let weeklyTags = [];
     // 建立 Set 來記錄實際出現過的 weekly tag
     const foundWeeklyTags = new Set();
+
+    // toggle sidebar
+    const orderSidebar = document.getElementById("order-sidebar");
+    document.getElementById("toggle-order").addEventListener("click", () => {
+        orderSidebar.classList.toggle("open");
+    });
+
+    // ===== 本周水果標籤動畫 =====
+    const fruitEmojis = ["🍍", "🍓", "🍉", "🍇", "🍊", "🥭"];
+    let emojiIndex = 0;
+
+    // 輪播動畫函數
+    function updateWeeklyDesc() {
+        const descIconDiv = document.getElementById("weekly-desc-icon");
+        const emoji = fruitEmojis[emojiIndex % fruitEmojis.length];
+        descIconDiv.style.opacity = 0;
+        setTimeout(() => {
+            descIconDiv.textContent = `${emoji}`;
+            descIconDiv.style.opacity = 1;
+        }, 200);
+        emojiIndex++;
+    }
+    // ===== 本周水果標籤 + 動畫 =====
 
     // 讀取 `weekly_tags.json`，獲取本周水果標籤
     fetch("weekly_tags.json")
@@ -23,6 +45,14 @@ document.addEventListener("DOMContentLoaded", function () {
         .then(weeklyData => {
             weeklyTags = weeklyData.tags || [];
             console.log("本周水果標籤:", weeklyTags);
+
+            // 顯示本周水果標籤描述
+            const descDiv = document.getElementById("weekly-desc");
+            if (descDiv && weeklyTags.length > 0) {
+                descDiv.textContent = `本周水果：${weeklyTags.join("、")}`;
+                updateWeeklyDesc();
+                setInterval(updateWeeklyDesc, 5000);
+            }
 
             // 讀取 `data.json`，獲取調酒資訊
             return fetch("data.json");
@@ -63,6 +93,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     <h4>${item.name}</h4>
                     <p><b>Category:</b> ${categoryText}</p>
                     <p>${item.description}</p>
+                    <button class="btn btn-sm btn-primary add-to-order" data-name="${item.name}">點這杯</button>
                 `;
 
                 menuList.appendChild(imgElement);
@@ -79,6 +110,13 @@ document.addEventListener("DOMContentLoaded", function () {
             // 關閉 Lightbox
             document.querySelector(".close").addEventListener("click", function () {
                 document.getElementById("lightbox").style.display = "none";
+            });
+            // 點擊 lightbox 背景區域也可以關閉
+            document.getElementById("lightbox").addEventListener("click", function (e) {
+                // 確保點的是背景而不是圖片本身
+                if (e.target.id === "lightbox") {
+                    this.style.display = "none";
+                }
             });
 
             // 篩選功能（支援多標籤）
@@ -111,6 +149,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 menuList.appendChild(placeholder);
             });
+
+            renderOrderList();
         })
         .catch(error => console.error("⚠️ 無法載入資料", error));
 
@@ -144,5 +184,56 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
+    // 儲存點酒紀錄到 localStorage
+    function saveOrder(data) {
+        localStorage.setItem("drinkOrders", JSON.stringify(data));
+    }
 
+    // 取得紀錄
+    function loadOrder() {
+        return JSON.parse(localStorage.getItem("drinkOrders") || "{}");
+    }
+
+    // 顯示紀錄
+    function renderOrderList() {
+        const orders = loadOrder();
+        const orderList = document.getElementById("order-list");
+        orderList.innerHTML = "";
+
+        Object.entries(orders).forEach(([name, count]) => {
+            const item = document.createElement("div");
+            item.classList.add("d-flex", "justify-content-between", "align-items-center", "my-1");
+            item.innerHTML = `
+            <span>${name} x ${count}</span>
+            <button class="btn btn-sm btn-danger delete-item" data-name="${name}">刪除</button>
+        `;
+            orderList.appendChild(item);
+        });
+    }
+
+    // 加入點酒
+    document.addEventListener("click", function (e) {
+        if (e.target.classList.contains("add-to-order")) {
+            const name = e.target.dataset.name;
+            const orders = loadOrder();
+            orders[name] = (orders[name] || 0) + 1;
+            saveOrder(orders);
+            renderOrderList();
+        }
+
+        // 單項刪除
+        if (e.target.classList.contains("delete-item")) {
+            const name = e.target.dataset.name;
+            const orders = loadOrder();
+            delete orders[name];
+            saveOrder(orders);
+            renderOrderList();
+        }
+
+        // 清空
+        if (e.target.id === "clear-orders") {
+            localStorage.removeItem("drinkOrders");
+            renderOrderList();
+        }
+    });
 });
