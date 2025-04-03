@@ -39,8 +39,10 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     // ===== 本周水果標籤 + 動畫 =====
 
-    // 讀取 `weekly_tags.json`，獲取本周水果標籤
-    fetch("weekly_tags.json")
+    // 讀取 weekly_tags，獲取本周水果標籤 (來源有json或Google Sheets，目前使用Google)
+    // fetch("weekly_tags.json")
+    const WEEKLY_TAGS_API = "https://script.google.com/macros/s/AKfycbyI7YXhjuYqHyifQXggKwb-PrqC7sr98mhm8q9glyNjyBhrzY1JjV5Vw8yq1gcHe21e_g/exec";
+    fetch(WEEKLY_TAGS_API)
         .then(response => response.json())
         .then(weeklyData => {
             weeklyTags = weeklyData.tags || [];
@@ -144,7 +146,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 placeholder.innerHTML = `
                     <img loading="lazy" src="img/default-drink.jpg" class="thumbnail" alt="No drink found">
                     <h4>${tag}</h4>
-                    <p>圖片還在製作中</p>
+                    <p>製作者還沒喝到，所以沒圖😝</p>
+                    <button class="btn btn-sm btn-primary add-to-order" data-name="${tag}">點這杯</button>
                 `;
 
                 menuList.appendChild(placeholder);
