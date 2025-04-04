@@ -247,7 +247,6 @@ document.addEventListener("DOMContentLoaded", function () {
     // 加入點酒
     let pendingDrinkName = null;
     document.addEventListener("click", function (e) {
-        console.log(e.target.id);
         if (e.target.classList.contains("add-to-order")) {
             // 點酒按鈕觸發 modal
             pendingDrinkName = e.target.dataset.name;

@@ -232,6 +232,7 @@ textarea {
 
 /* 調整分類按鈕 */
 .btn-group .btn {
+    min-width: 100px;
     padding: 10px 15px;
     font-size: 1rem;
     border-radius: 5px;
@@ -340,7 +341,7 @@ textarea {
     top: 0;
     right: 0;
     height: 100vh;
-    width: 350px;
+    width: 300px;
     color: white;
     transform: translateX(100%);
     transition: transform 0.3s ease;

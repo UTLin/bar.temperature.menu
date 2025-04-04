@@ -96,7 +96,7 @@ foreach ($image in $images) {
         # 設定 JPEG 壓縮品質（0-100，數值越高品質越好）
         $encoder = [System.Drawing.Imaging.ImageCodecInfo]::GetImageEncoders() | Where-Object { $_.MimeType -eq "image/jpeg" }
         $encoderParams = New-Object System.Drawing.Imaging.EncoderParameters(1)
-        $encoderParams.Param[0] = New-Object System.Drawing.Imaging.EncoderParameter([System.Drawing.Imaging.Encoder]::Quality, 30) # 30% 品質
+        $encoderParams.Param[0] = New-Object System.Drawing.Imaging.EncoderParameter([System.Drawing.Imaging.Encoder]::Quality, 20) # 30% 品質
 
         # 以較低品質存成新圖片（即使已存在也會覆蓋）
         $img.Save($imgPath, $encoder, $encoderParams)

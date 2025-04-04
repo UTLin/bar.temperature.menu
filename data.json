@@ -1,37 +1,35 @@
 ﻿[
   {
-    "file": "menuImg\\20220521-水果-荔枝小玉西瓜.jpg",
-    "description": "",
-    "thumbnail": "menuImg\\20220521-水果-荔枝小玉西瓜.jpg",
-    "name": "小玉西瓜、荔枝",
+    "thumbnail": "menuImg\\20220521-水果-小玉西瓜.jpg",
+    "name": "小玉西瓜",
     "category": [
       "signature",
       "小玉西瓜",
-      "荔枝"
-    ]
+      "西瓜"
+    ],
+    "file": "menuImg\\20220521-水果-小玉西瓜.jpg",
+    "description": ""
   },
   {
-    "file": "menuImg\\20220521-Classic-GinTonic果香.jpg",
-    "description": "果香味的Gintonic",
     "thumbnail": "menuImg\\20220521-Classic-GinTonic果香.jpg",
     "name": "Gintonic 果香味",
     "category": [
       "gin",
       "classic"
-    ]
+    ],
+    "file": "menuImg\\20220521-Classic-GinTonic果香.jpg",
+    "description": "果香味的Gintonic"
   },
   {
-    "file": "menuImg\\20220521-Shot-老蔡-1.jpg",
-    "description": "老蔡生日",
     "thumbnail": "menuImg\\20220521-Shot-老蔡-1.jpg",
     "name": "Shot 1",
     "category": [
       "shot"
-    ]
+    ],
+    "file": "menuImg\\20220521-Shot-老蔡-1.jpg",
+    "description": "老蔡生日"
   },
   {
-    "file": "menuImg\\20220521-Shot-老蔡生日.jpg",
-    "description": "小黃瓜、小熊軟糖、葡萄",
     "thumbnail": "menuImg\\20220521-Shot-老蔡生日.jpg",
     "name": "Shot",
     "category": [
@@ -39,131 +37,131 @@
       "小黃瓜",
       "小熊軟糖",
       "葡萄"
-    ]
+    ],
+    "file": "menuImg\\20220521-Shot-老蔡生日.jpg",
+    "description": "小黃瓜、小熊軟糖、葡萄"
   },
   {
-    "file": "menuImg\\20220521-ShotLong-東巴老蔡.jpg",
-    "description": "",
     "thumbnail": "menuImg\\20220521-ShotLong-東巴老蔡.jpg",
     "name": "咖啡 Long Shot",
     "category": [
       "咖啡",
       "shot",
       "longshot"
-    ]
+    ],
+    "file": "menuImg\\20220521-ShotLong-東巴老蔡.jpg",
+    "description": ""
   },
   {
-    "file": "menuImg\\20220521-Special-手榴彈-中階.jpg",
-    "description": "中階版",
     "thumbnail": "menuImg\\20220521-Special-手榴彈-中階.jpg",
     "name": "手榴彈",
     "category": [
       "signature",
       "shot"
-    ]
+    ],
+    "file": "menuImg\\20220521-Special-手榴彈-中階.jpg",
+    "description": "中階版"
   },
   {
-    "file": "menuImg\\20220702-水果-芒果.jpg",
-    "description": "",
     "thumbnail": "menuImg\\20220702-水果-芒果.jpg",
     "name": "芒果 2022",
     "category": [
       "signature",
       "芒果"
-    ]
+    ],
+    "file": "menuImg\\20220702-水果-芒果.jpg",
+    "description": ""
   },
   {
-    "file": "menuImg\\20220702-Classic-Fizz曇花.jpg",
-    "description": "",
     "thumbnail": "menuImg\\20220702-Classic-Fizz曇花.jpg",
     "name": "Gin Fizz 曇花",
     "category": [
       "classic",
       "gin"
-    ]
+    ],
+    "file": "menuImg\\20220702-Classic-Fizz曇花.jpg",
+    "description": ""
   },
   {
-    "file": "menuImg\\20220702-Classic-GinTonic柑橘 葡萄柚.jpg",
-    "description": "柑橘葡萄柚風味",
     "thumbnail": "menuImg\\20220702-Classic-GinTonic柑橘 葡萄柚.jpg",
     "name": "Gin Tonic",
     "category": [
       "classic",
       "gin"
-    ]
+    ],
+    "file": "menuImg\\20220702-Classic-GinTonic柑橘 葡萄柚.jpg",
+    "description": "柑橘葡萄柚風味"
   },
   {
-    "file": "menuImg\\20220702-Special-金雞掰咖啡 芝麻.jpg",
-    "description": "咖啡、芝麻風味",
     "thumbnail": "menuImg\\20220702-Special-金雞掰咖啡 芝麻.jpg",
     "name": "金雞掰",
     "category": [
       "signature",
       "咖啡",
       "芝麻"
-    ]
+    ],
+    "file": "menuImg\\20220702-Special-金雞掰咖啡 芝麻.jpg",
+    "description": "咖啡、芝麻風味"
   },
   {
-    "file": "menuImg\\20220806-Shot-宅生日龍舌蘭.jpg",
-    "description": "taqueria shot",
     "thumbnail": "menuImg\\20220806-Shot-宅生日龍舌蘭.jpg",
     "name": "Shot",
     "category": [
       "shot"
-    ]
+    ],
+    "file": "menuImg\\20220806-Shot-宅生日龍舌蘭.jpg",
+    "description": "taqueria shot"
   },
   {
-    "file": "menuImg\\20220806-Shot-瑪格麗特分解版-1.jpg",
-    "description": "瑪格麗特分解版",
     "thumbnail": "menuImg\\20220806-Shot-瑪格麗特分解版-1.jpg",
     "name": "Shot",
     "category": [
       "shot"
-    ]
+    ],
+    "file": "menuImg\\20220806-Shot-瑪格麗特分解版-1.jpg",
+    "description": "瑪格麗特分解版"
   },
   {
-    "file": "menuImg\\20220806-Shot-瑪格麗特分解版.jpg",
-    "description": "瑪格麗特分解版",
     "thumbnail": "menuImg\\20220806-Shot-瑪格麗特分解版.jpg",
     "name": "shot",
     "category": [
       "shot"
-    ]
+    ],
+    "file": "menuImg\\20220806-Shot-瑪格麗特分解版.jpg",
+    "description": "瑪格麗特分解版"
   },
   {
-    "file": "menuImg\\20220917-水果-紅心芭樂.jpg",
-    "description": "",
     "thumbnail": "menuImg\\20220917-水果-紅心芭樂.jpg",
     "name": "紅心芭樂",
     "category": [
       "signature",
       "紅心芭樂",
       "芭樂"
-    ]
+    ],
+    "file": "menuImg\\20220917-水果-紅心芭樂.jpg",
+    "description": ""
   },
   {
-    "file": "menuImg\\20220917-水果-楊桃.jpg",
-    "description": "",
     "thumbnail": "menuImg\\20220917-水果-楊桃.jpg",
     "name": "楊桃",
     "category": [
       "signature",
       "楊桃"
-    ]
+    ],
+    "file": "menuImg\\20220917-水果-楊桃.jpg",
+    "description": ""
   },
   {
-    "file": "menuImg\\20220917-茶酒-蜜香紅茶.jpg",
-    "description": "",
     "thumbnail": "menuImg\\20220917-茶酒-蜜香紅茶.jpg",
     "name": "蜜香紅茶",
     "category": [
       "茶酒",
       "signature"
-    ]
+    ],
+    "file": "menuImg\\20220917-茶酒-蜜香紅茶.jpg",
+    "description": ""
   },
   {
-    "file": "menuImg\\20220917-Classic-咖啡泥煤.jpg",
-    "description": "咖啡泥煤風味 (待確認)",
     "thumbnail": "menuImg\\20220917-Classic-咖啡泥煤.jpg",
     "name": "Signature",
     "category": [
@@ -171,103 +169,103 @@
       "咖啡",
       "泥煤",
       "signature"
-    ]
+    ],
+    "file": "menuImg\\20220917-Classic-咖啡泥煤.jpg",
+    "description": "咖啡泥煤風味 (待確認)"
   },
   {
-    "file": "menuImg\\20220917-Shot-楊桃.jpg",
-    "description": "楊桃",
     "thumbnail": "menuImg\\20220917-Shot-楊桃.jpg",
     "name": "Long Shot",
     "category": [
       "shot",
       "longshot",
       "楊桃"
-    ]
+    ],
+    "file": "menuImg\\20220917-Shot-楊桃.jpg",
+    "description": "楊桃"
   },
   {
-    "file": "menuImg\\20220917-Shot-鳳梨.JPG",
-    "description": "鳳梨",
     "thumbnail": "menuImg\\20220917-Shot-鳳梨.JPG",
     "name": "Long Shot",
     "category": [
       "shot",
       "longshot",
       "鳳梨"
-    ]
+    ],
+    "file": "menuImg\\20220917-Shot-鳳梨.JPG",
+    "description": "鳳梨"
   },
   {
-    "file": "menuImg\\20220917-Shot-JackDaniels威士忌.JPG",
-    "description": "JD威士忌",
     "thumbnail": "menuImg\\20220917-Shot-JackDaniels威士忌.JPG",
     "name": "Shot",
     "category": [
       "shot",
       "Whisky"
-    ]
+    ],
+    "file": "menuImg\\20220917-Shot-JackDaniels威士忌.JPG",
+    "description": "JD威士忌"
   },
   {
-    "file": "menuImg\\20221022-水果-番茄.jpg",
-    "description": "得獎酒",
     "thumbnail": "menuImg\\20221022-水果-番茄.jpg",
     "name": "蕃茄",
     "category": [
       "signature",
       "蕃茄"
-    ]
+    ],
+    "file": "menuImg\\20221022-水果-番茄.jpg",
+    "description": "得獎酒"
   },
   {
-    "file": "menuImg\\20221022-水果-葡萄.jpg",
-    "description": "",
     "thumbnail": "menuImg\\20221022-水果-葡萄.jpg",
     "name": "葡萄",
     "category": [
       "signature",
       "葡萄"
-    ]
+    ],
+    "file": "menuImg\\20221022-水果-葡萄.jpg",
+    "description": ""
   },
   {
-    "file": "menuImg\\20221022-Classic-艾雷島GinTonic.jpg",
-    "description": "艾雷島Gin植物學家",
     "thumbnail": "menuImg\\20221022-Classic-艾雷島GinTonic.jpg",
     "name": "Gin Tonic",
     "category": [
       "classic",
       "gin"
-    ]
+    ],
+    "file": "menuImg\\20221022-Classic-艾雷島GinTonic.jpg",
+    "description": "艾雷島Gin植物學家"
   },
   {
-    "file": "menuImg\\20221022-Shot-香蕉.jpg",
-    "description": "香蕉",
     "thumbnail": "menuImg\\20221022-Shot-香蕉.jpg",
     "name": "Shot",
     "category": [
       "shot",
       "香蕉"
-    ]
+    ],
+    "file": "menuImg\\20221022-Shot-香蕉.jpg",
+    "description": "香蕉"
   },
   {
-    "file": "menuImg\\20221223-水果-藍莓🫐.JPG",
-    "description": "",
     "thumbnail": "menuImg\\20221223-水果-藍莓🫐.JPG",
     "name": "藍莓",
     "category": [
       "signature",
       "藍莓"
-    ]
+    ],
+    "file": "menuImg\\20221223-水果-藍莓🫐.JPG",
+    "description": ""
   },
   {
-    "file": "menuImg\\20221223-Classic-GinTonic ROKU柚子果香.jpg",
-    "description": "ROKU 柚子果香",
     "thumbnail": "menuImg\\20221223-Classic-GinTonic ROKU柚子果香.jpg",
     "name": "Gin Tonic",
     "category": [
       "classic",
       "gin"
-    ]
+    ],
+    "file": "menuImg\\20221223-Classic-GinTonic ROKU柚子果香.jpg",
+    "description": "ROKU 柚子果香"
   },
   {
-    "file": "menuImg\\20221223-Shot-橘子.jpg",
-    "description": "葡萄柚、茶、橘子",
     "thumbnail": "menuImg\\20221223-Shot-橘子.jpg",
     "name": "Shot",
     "category": [
@@ -275,123 +273,122 @@
       "葡萄柚",
       "茶",
       "橘子"
-    ]
+    ],
+    "file": "menuImg\\20221223-Shot-橘子.jpg",
+    "description": "葡萄柚、茶、橘子"
   },
   {
-    "file": "menuImg\\20221231-水果-鳳梨🍍.jpg",
-    "description": "",
     "thumbnail": "menuImg\\20221231-水果-鳳梨🍍.jpg",
     "name": "鳳梨",
     "category": [
       "signature",
       "鳳梨"
-    ]
+    ],
+    "file": "menuImg\\20221231-水果-鳳梨🍍.jpg",
+    "description": ""
   },
   {
-    "file": "menuImg\\20221231-水果-蓮霧(清爽類Fizz).jpg",
-    "description": "清爽感 Fizz",
     "thumbnail": "menuImg\\20221231-水果-蓮霧(清爽類Fizz).jpg",
     "name": "蓮霧",
     "category": [
       "signature",
       "蓮霧"
-    ]
+    ],
+    "file": "menuImg\\20221231-水果-蓮霧(清爽類Fizz).jpg",
+    "description": "清爽感 Fizz"
   },
   {
-    "file": "menuImg\\20221231-Shot-葡萄.jpg",
-    "description": "",
     "thumbnail": "menuImg\\20221231-Shot-葡萄.jpg",
     "name": "Shot",
     "category": [
       "shot",
       "葡萄"
-    ]
+    ],
+    "file": "menuImg\\20221231-Shot-葡萄.jpg",
+    "description": ""
   },
   {
-    "file": "menuImg\\20230118-Shot-葡萄.JPG",
-    "description": "",
     "thumbnail": "menuImg\\20230118-Shot-葡萄.JPG",
     "name": "Shot",
     "category": [
       "shot",
       "葡萄"
-    ]
+    ],
+    "file": "menuImg\\20230118-Shot-葡萄.JPG",
+    "description": ""
   },
   {
-    "file": "menuImg\\20230118-Special-工地版手榴彈.jpg",
-    "description": "保力達B",
     "thumbnail": "menuImg\\20230118-Special-工地版手榴彈.jpg",
     "name": "手榴彈 工地版",
     "category": [
       "shot",
       "signature",
       "保力達"
-    ]
+    ],
+    "file": "menuImg\\20230118-Special-工地版手榴彈.jpg",
+    "description": "保力達B"
   },
   {
-    "file": "menuImg\\20230118-Special-保力達.jpg",
-    "description": "保力達B",
     "thumbnail": "menuImg\\20230118-Special-保力達.jpg",
     "name": "保力達調酒",
     "category": [
       "signature",
       "保力達"
-    ]
+    ],
+    "file": "menuImg\\20230118-Special-保力達.jpg",
+    "description": "保力達B"
   },
   {
-    "file": "menuImg\\20230226-水果-蓮霧.jpg",
-    "description": "",
     "thumbnail": "menuImg\\20230226-水果-蓮霧.jpg",
     "name": "蓮霧",
     "category": [
       "signature",
       "蓮霧"
-    ]
+    ],
+    "file": "menuImg\\20230226-水果-蓮霧.jpg",
+    "description": ""
   },
   {
-    "file": "menuImg\\20230226-水果-櫻桃.jpg",
-    "description": "",
     "thumbnail": "menuImg\\20230226-水果-櫻桃.jpg",
     "name": "櫻桃",
     "category": [
       "signature",
       "櫻桃"
-    ]
+    ],
+    "file": "menuImg\\20230226-水果-櫻桃.jpg",
+    "description": ""
   },
   {
-    "file": "menuImg\\20230310-水果-草莓.jpg",
-    "description": "",
     "thumbnail": "menuImg\\20230310-水果-草莓.jpg",
     "name": "草莓 2023",
     "category": [
       "signature",
       "草莓"
-    ]
+    ],
+    "file": "menuImg\\20230310-水果-草莓.jpg",
+    "description": ""
   },
   {
-    "file": "menuImg\\20230331-Special-奶茶.jpg",
-    "description": "",
     "thumbnail": "menuImg\\20230331-Special-奶茶.jpg",
     "name": "奶茶",
     "category": [
       "signature",
       "奶茶"
-    ]
+    ],
+    "file": "menuImg\\20230331-Special-奶茶.jpg",
+    "description": ""
   },
   {
-    "file": "menuImg\\20230408-茶酒水果-烏龍茶 鳳梨.jpg",
-    "description": "",
-    "thumbnail": "menuImg\\20230408-茶酒水果-烏龍茶 鳳梨.jpg",
-    "name": "烏龍茶、鳳梨",
+    "thumbnail": "menuImg\\20230408-茶酒-烏龍茶.jpg",
+    "name": "烏龍茶",
     "category": [
       "signature",
-      "茶酒",
-      "鳳梨"
-    ]
+      "茶酒"
+    ],
+    "file": "menuImg\\20230408-茶酒-烏龍茶.jpg",
+    "description": ""
   },
   {
-    "file": "menuImg\\20230408-Shot-橘子 香蕉巧克力 伯爵茶.jpg",
-    "description": "",
     "thumbnail": "menuImg\\20230408-Shot-橘子 香蕉巧克力 伯爵茶.jpg",
     "name": "Shot",
     "category": [
@@ -399,11 +396,11 @@
       "茶",
       "橘子",
       "香蕉"
-    ]
+    ],
+    "file": "menuImg\\20230408-Shot-橘子 香蕉巧克力 伯爵茶.jpg",
+    "description": ""
   },
   {
-    "file": "menuImg\\20230428-水果-Rum 可可 桑椹 覆盆莓.jpg",
-    "description": "",
     "thumbnail": "menuImg\\20230428-水果-Rum 可可 桑椹 覆盆莓.jpg",
     "name": "桑葚覆盆莓",
     "category": [
@@ -411,128 +408,128 @@
       "桑葚",
       "覆盆莓",
       "rum"
-    ]
+    ],
+    "file": "menuImg\\20230428-水果-Rum 可可 桑椹 覆盆莓.jpg",
+    "description": ""
   },
   {
-    "file": "menuImg\\20230428-Classic-王者復甦.jpg",
-    "description": "亡者復甦",
     "thumbnail": "menuImg\\20230428-Classic-王者復甦.jpg",
     "name": "Corpse Reviver",
     "category": [
       "classic"
-    ]
+    ],
+    "file": "menuImg\\20230428-Classic-王者復甦.jpg",
+    "description": "亡者復甦"
   },
   {
-    "file": "menuImg\\20230527-水果-芒果.jpg",
-    "description": "",
     "thumbnail": "menuImg\\20230527-水果-芒果.jpg",
     "name": "芒果 2023",
     "category": [
       "signature",
       "芒果"
-    ]
+    ],
+    "file": "menuImg\\20230527-水果-芒果.jpg",
+    "description": ""
   },
   {
-    "file": "menuImg\\20230527-Classic-GinTonic 柑橘香味.jpg",
-    "description": "柑橘風味",
     "thumbnail": "menuImg\\20230527-Classic-GinTonic 柑橘香味.jpg",
     "name": "Gin Tonic",
     "category": [
       "classic",
       "gin"
-    ]
+    ],
+    "file": "menuImg\\20230527-Classic-GinTonic 柑橘香味.jpg",
+    "description": "柑橘風味"
   },
   {
-    "file": "menuImg\\20230527-Shot-三合一.jpg",
-    "description": "三合一",
     "thumbnail": "menuImg\\20230527-Shot-三合一.jpg",
     "name": "Shot",
     "category": [
       "shot"
-    ]
+    ],
+    "file": "menuImg\\20230527-Shot-三合一.jpg",
+    "description": "三合一"
   },
   {
-    "file": "menuImg\\20230527-Shot-愛玉.jpg",
-    "description": "愛玉",
     "thumbnail": "menuImg\\20230527-Shot-愛玉.jpg",
     "name": "Shot",
     "category": [
       "shot",
       "愛玉"
-    ]
+    ],
+    "file": "menuImg\\20230527-Shot-愛玉.jpg",
+    "description": "愛玉"
   },
   {
-    "file": "menuImg\\20230610-茶酒-伯爵柑橘.jpg",
-    "description": "",
     "thumbnail": "menuImg\\20230610-茶酒-伯爵柑橘.jpg",
     "name": "伯爵茶酒",
     "category": [
       "茶酒",
       "signature"
-    ]
+    ],
+    "file": "menuImg\\20230610-茶酒-伯爵柑橘.jpg",
+    "description": ""
   },
   {
-    "file": "menuImg\\20230610-Classic-GinTonic 2020限定版 泡盛味.jpg",
-    "description": "限量沖繩泡盛",
     "thumbnail": "menuImg\\20230610-Classic-GinTonic 2020限定版 泡盛味.jpg",
     "name": "Gin Tonic",
     "category": [
       "classic",
       "泡盛"
-    ]
+    ],
+    "file": "menuImg\\20230610-Classic-GinTonic 2020限定版 泡盛味.jpg",
+    "description": "限量沖繩泡盛"
   },
   {
-    "file": "menuImg\\20230630-Classic-沖繩泡盛Gin馬丁尼.jpg",
-    "description": "限量沖繩泡盛",
     "thumbnail": "menuImg\\20230630-Classic-沖繩泡盛Gin馬丁尼.jpg",
     "name": "Martini",
     "category": [
       "classic",
       "gin"
-    ]
+    ],
+    "file": "menuImg\\20230630-Classic-沖繩泡盛Gin馬丁尼.jpg",
+    "description": "限量沖繩泡盛"
   },
   {
-    "file": "menuImg\\20230630-Classic-長島冰茶.jpg",
-    "description": "",
     "thumbnail": "menuImg\\20230630-Classic-長島冰茶.jpg",
     "name": "長島冰茶",
     "category": [
       "classic"
-    ]
+    ],
+    "file": "menuImg\\20230630-Classic-長島冰茶.jpg",
+    "description": ""
   },
   {
-    "file": "menuImg\\20230630-Classic-紙飛機PaperPlane.jpg",
-    "description": "紙飛機 威士忌",
     "thumbnail": "menuImg\\20230630-Classic-紙飛機PaperPlane.jpg",
     "name": "Paper Plane",
     "category": [
       "classic",
       "whisky"
-    ]
+    ],
+    "file": "menuImg\\20230630-Classic-紙飛機PaperPlane.jpg",
+    "description": "紙飛機 威士忌"
   },
   {
-    "file": "menuImg\\20230630-LastWord Gin 修道院藥草酒 黑櫻桃利口酒.jpg",
-    "description": "修道院藥草酒 黑櫻桃利口酒",
     "thumbnail": "menuImg\\20230630-LastWord Gin 修道院藥草酒 黑櫻桃利口酒.jpg",
     "name": "Last Word",
     "category": [
       "classic",
       "gin"
-    ]
+    ],
+    "file": "menuImg\\20230630-LastWord Gin 修道院藥草酒 黑櫻桃利口酒.jpg",
+    "description": "修道院藥草酒 黑櫻桃利口酒"
   },
   {
-    "file": "menuImg\\20230630-Shot-香草 野莓 琴酒 冰淇淋.jpg",
-    "description": "冰淇淋Shot",
     "thumbnail": "menuImg\\20230630-Shot-香草 野莓 琴酒 冰淇淋.jpg",
     "name": "Shot",
     "category": [
       "shot",
       "冰淇淋"
-    ]
+    ],
+    "file": "menuImg\\20230630-Shot-香草 野莓 琴酒 冰淇淋.jpg",
+    "description": "冰淇淋Shot"
   },
   {
-    "file": "menuImg\\20230630-Shot-荔枝 芒果 伯爵的茶Soft.jpg",
-    "description": "荔枝、芒果、伯爵茶",
     "thumbnail": "menuImg\\20230630-Shot-荔枝 芒果 伯爵的茶Soft.jpg",
     "name": "Shot",
     "category": [
@@ -540,165 +537,165 @@
       "荔枝",
       "芒果",
       "伯爵茶"
-    ]
+    ],
+    "file": "menuImg\\20230630-Shot-荔枝 芒果 伯爵的茶Soft.jpg",
+    "description": "荔枝、芒果、伯爵茶"
   },
   {
-    "file": "menuImg\\20230630-ShotLong.jpg",
-    "description": "",
     "thumbnail": "menuImg\\20230630-ShotLong.jpg",
     "name": "Long Shot",
     "category": [
       "shot",
       "longshot"
-    ]
+    ],
+    "file": "menuImg\\20230630-ShotLong.jpg",
+    "description": ""
   },
   {
-    "file": "menuImg\\20230805-水果-荔枝.jpg",
-    "description": "",
     "thumbnail": "menuImg\\20230805-水果-荔枝.jpg",
     "name": "荔枝 2023",
     "category": [
       "signature",
       "荔枝"
-    ]
+    ],
+    "file": "menuImg\\20230805-水果-荔枝.jpg",
+    "description": ""
   },
   {
-    "file": "menuImg\\20230805-Classic-GinTonic藍色瓶子 香茅味.jpg",
-    "description": "龐貝藍鑽香茅味",
     "thumbnail": "menuImg\\20230805-Classic-GinTonic藍色瓶子 香茅味.jpg",
     "name": "Gin Tonic",
     "category": [
       "gin",
       "classic"
-    ]
+    ],
+    "file": "menuImg\\20230805-Classic-GinTonic藍色瓶子 香茅味.jpg",
+    "description": "龐貝藍鑽香茅味"
   },
   {
-    "file": "menuImg\\20230805-Shot-葡萄柚.jpg",
-    "description": "葡萄柚",
     "thumbnail": "menuImg\\20230805-Shot-葡萄柚.jpg",
     "name": "Shot",
     "category": [
       "shot",
       "葡萄柚"
-    ]
+    ],
+    "file": "menuImg\\20230805-Shot-葡萄柚.jpg",
+    "description": "葡萄柚"
   },
   {
-    "file": "menuImg\\20230805-Special-原子彈艾碧斯降階版.jpg",
-    "description": "降階版",
     "thumbnail": "menuImg\\20230805-Special-原子彈艾碧斯降階版.jpg",
     "name": "原子彈",
     "category": [
       "shot",
       "signature"
-    ]
+    ],
+    "file": "menuImg\\20230805-Special-原子彈艾碧斯降階版.jpg",
+    "description": "降階版"
   },
   {
-    "file": "menuImg\\20230916-水果-奇異果.jpg",
-    "description": "",
     "thumbnail": "menuImg\\20230916-水果-奇異果.jpg",
     "name": "奇異果",
     "category": [
       "signature",
       "奇異果"
-    ]
+    ],
+    "file": "menuImg\\20230916-水果-奇異果.jpg",
+    "description": ""
   },
   {
-    "file": "menuImg\\20230916-Classic-花花公子-威士忌.jpg",
-    "description": "花花公子",
     "thumbnail": "menuImg\\20230916-Classic-花花公子-威士忌.jpg",
     "name": "Boulevardier",
     "category": [
       "classic",
       "whisky"
-    ]
+    ],
+    "file": "menuImg\\20230916-Classic-花花公子-威士忌.jpg",
+    "description": "花花公子"
   },
   {
-    "file": "menuImg\\20230916-Classic-Stinger-經典白蘭地.jpg",
-    "description": "白蘭地",
     "thumbnail": "menuImg\\20230916-Classic-Stinger-經典白蘭地.jpg",
     "name": "Stinger",
     "category": [
       "classic",
       "白蘭地"
-    ]
+    ],
+    "file": "menuImg\\20230916-Classic-Stinger-經典白蘭地.jpg",
+    "description": "白蘭地"
   },
   {
-    "file": "menuImg\\20230916-Special-咖啡.jpg",
-    "description": "(待確認)",
     "thumbnail": "menuImg\\20230916-Special-咖啡.jpg",
     "name": "咖啡",
     "category": [
       "classic",
       "signature",
       "咖啡"
-    ]
+    ],
+    "file": "menuImg\\20230916-Special-咖啡.jpg",
+    "description": "(待確認)"
   },
   {
-    "file": "menuImg\\20231021-Classic-果香Gin基底.jpg",
-    "description": "Gordon's Pink Gin 哥頓粉紅金酒 (待確認)",
     "thumbnail": "menuImg\\20231021-Classic-果香Gin基底.jpg",
     "name": "經典調酒",
     "category": [
       "classic",
       "gin"
-    ]
+    ],
+    "file": "menuImg\\20231021-Classic-果香Gin基底.jpg",
+    "description": "Gordon's Pink Gin 哥頓粉紅金酒 (待確認)"
   },
   {
-    "file": "menuImg\\20231021-Shot-義大利Gin.jpg",
-    "description": "",
     "thumbnail": "menuImg\\20231021-Shot-義大利Gin.jpg",
     "name": "Shot",
     "category": [
       "shot",
       "gin"
-    ]
+    ],
+    "file": "menuImg\\20231021-Shot-義大利Gin.jpg",
+    "description": ""
   },
   {
-    "file": "menuImg\\20231021-Shot♥️.jpg",
-    "description": "",
     "thumbnail": "menuImg\\20231021-Shot♥️.jpg",
     "name": "Shot",
     "category": [
       "shot",
       "葡萄",
       "柳橙"
-    ]
+    ],
+    "file": "menuImg\\20231021-Shot♥️.jpg",
+    "description": ""
   },
   {
-    "file": "menuImg\\20231028-Shot(濃).jpg",
-    "description": "",
     "thumbnail": "menuImg\\20231028-Shot(濃).jpg",
     "name": "Shot",
     "category": [
       "shot",
       "蘋果",
       "葡萄柚"
-    ]
+    ],
+    "file": "menuImg\\20231028-Shot(濃).jpg",
+    "description": ""
   },
   {
-    "file": "menuImg\\20231118-Classic-GinTonic季之美.jpg",
-    "description": "季之美",
     "thumbnail": "menuImg\\20231118-Classic-GinTonic季之美.jpg",
     "name": "Gin Tonic",
     "category": [
       "classic",
       "gin"
-    ]
+    ],
+    "file": "menuImg\\20231118-Classic-GinTonic季之美.jpg",
+    "description": "季之美"
   },
   {
-    "file": "menuImg\\20231222-Shot-1.jpg",
-    "description": "",
     "thumbnail": "menuImg\\20231222-Shot-1.jpg",
     "name": "Shot",
     "category": [
       "shot",
       "小熊軟糖",
       "柳橙"
-    ]
+    ],
+    "file": "menuImg\\20231222-Shot-1.jpg",
+    "description": ""
   },
   {
-    "file": "menuImg\\20231222-Shot-3.jpg",
-    "description": "",
     "thumbnail": "menuImg\\20231222-Shot-3.jpg",
     "name": "Shot",
     "category": [
@@ -708,102 +705,103 @@
       "葡萄",
       "葡萄柚",
       "茶"
-    ]
+    ],
+    "file": "menuImg\\20231222-Shot-3.jpg",
+    "description": ""
   },
   {
-    "file": "menuImg\\20231231-ShotLong-地獄殿(原版).jpg",
-    "description": "地獄殿原版",
     "thumbnail": "menuImg\\20231231-ShotLong-地獄殿(原版).jpg",
     "name": "Long Shot",
     "category": [
       "shot",
       "longshot",
       "地獄殿"
-    ]
+    ],
+    "file": "menuImg\\20231231-ShotLong-地獄殿(原版).jpg",
+    "description": "地獄殿原版"
   },
   {
-    "file": "menuImg\\20240113-水果-小黃瓜.jpg",
-    "description": "小黃瓜",
     "thumbnail": "menuImg\\20240113-水果-小黃瓜.jpg",
     "name": "小黃瓜 2024",
     "category": [
       "signature",
       "小黃瓜"
-    ]
+    ],
+    "file": "menuImg\\20240113-水果-小黃瓜.jpg",
+    "description": "小黃瓜"
   },
   {
-    "file": "menuImg\\20240113-Classic-GinTonic果香Hven海軍.jpg",
-    "description": "",
     "thumbnail": "menuImg\\20240113-Classic-GinTonic果香Hven海軍.jpg",
-    "name": "20240113-Classic-GinTonic果香Hven海軍.jpg",
-    "category": []
+    "name": "Gin Tonic",
+    "category": [
+      "classic",
+      "gin"
+    ],
+    "file": "menuImg\\20240113-Classic-GinTonic果香Hven海軍.jpg",
+    "description": "HVEN海軍琴酒 果香"
   },
   {
-    "file": "menuImg\\20240113-Classic-Vieux Carrè(老廣場).jpg",
-    "description": "老廣場",
     "thumbnail": "menuImg\\20240113-Classic-Vieux Carrè(老廣場).jpg",
     "name": "Vieux Carrè",
     "category": [
       "classic",
       "whisky"
-    ]
+    ],
+    "file": "menuImg\\20240113-Classic-Vieux Carrè(老廣場).jpg",
+    "description": "老廣場"
   },
   {
-    "file": "menuImg\\20240224-水果-青葡萄.jpg",
-    "description": "青葡萄",
     "thumbnail": "menuImg\\20240224-水果-青葡萄.jpg",
     "name": "青葡萄 2024",
     "category": [
       "signature",
       "青葡萄"
-    ]
+    ],
+    "file": "menuImg\\20240224-水果-青葡萄.jpg",
+    "description": "青葡萄"
   },
   {
-    "file": "menuImg\\20240224-classic-GinTonic陳年過泥煤桶HVEN.jpg",
-    "description": "HEVN琴酒 陳年過泥煤桶",
     "thumbnail": "menuImg\\20240224-classic-GinTonic陳年過泥煤桶HVEN.jpg",
     "name": "Gin Tonic",
     "category": [
       "classic",
       "gin"
-    ]
+    ],
+    "file": "menuImg\\20240224-classic-GinTonic陳年過泥煤桶HVEN.jpg",
+    "description": "HEVN海軍琴酒 陳年過泥煤桶"
   },
   {
-    "file": "menuImg\\20240303-水果-藍莓橘子百香果.jpg",
-    "description": "",
-    "thumbnail": "menuImg\\20240303-水果-藍莓橘子百香果.jpg",
-    "name": "橘子、百香果、藍莓",
+    "thumbnail": "menuImg\\20240303-水果-橘子.jpg",
+    "name": "橘子",
     "category": [
       "signature",
-      "橘子",
-      "百香果",
-      "藍莓"
-    ]
+      "橘子"
+    ],
+    "file": "menuImg\\20240303-水果-橘子.jpg",
+    "description": ""
   },
   {
-    "file": "menuImg\\20240303-Classic-DryMartine.jpg",
-    "description": "馬丁尼",
     "thumbnail": "menuImg\\20240303-Classic-DryMartine.jpg",
     "name": "Dry Martine",
     "category": [
       "classic",
       "gin"
-    ]
+    ],
+    "file": "menuImg\\20240303-Classic-DryMartine.jpg",
+    "description": "馬丁尼"
   },
   {
-    "file": "menuImg\\20240303-Shot-小金特製生日.jpg",
-    "description": "生日特製Shot LemonDrop",
     "thumbnail": "menuImg\\20240303-Shot-小金特製生日.jpg",
     "name": "Shot",
     "category": [
       "shot",
       "生日",
       "檸檬"
-    ]
+    ],
+    "file": "menuImg\\20240303-Shot-小金特製生日.jpg",
+    "description": "生日特製Shot LemonDrop"
   },
   {
-    "file": "menuImg\\20240303-Shot-青葡萄草莓橘子.jpg",
-    "description": "青葡萄、草莓、橘子",
     "thumbnail": "menuImg\\20240303-Shot-青葡萄草莓橘子.jpg",
     "name": "Shot",
     "category": [
@@ -811,185 +809,185 @@
       "青葡萄",
       "草莓",
       "橘子"
-    ]
+    ],
+    "file": "menuImg\\20240303-Shot-青葡萄草莓橘子.jpg",
+    "description": "青葡萄、草莓、橘子"
   },
   {
-    "file": "menuImg\\20240303-Shot-草莓 百香軟糖.jpg",
-    "description": "",
     "thumbnail": "menuImg\\20240303-Shot-草莓 百香軟糖.jpg",
     "name": "Shot",
     "category": [
       "shot",
       "草莓",
       "百香果軟糖"
-    ]
+    ],
+    "file": "menuImg\\20240303-Shot-草莓 百香軟糖.jpg",
+    "description": ""
   },
   {
-    "file": "menuImg\\20240316-水果-甜桃.jpg",
-    "description": "",
     "thumbnail": "menuImg\\20240316-水果-甜桃.jpg",
     "name": "甜桃2024",
     "category": [
       "signature",
       "甜桃"
-    ]
+    ],
+    "file": "menuImg\\20240316-水果-甜桃.jpg",
+    "description": ""
   },
   {
-    "file": "menuImg\\20240316-茶酒-鐵觀音.jpg",
-    "description": "",
     "thumbnail": "menuImg\\20240316-茶酒-鐵觀音.jpg",
     "name": "鐵觀音",
     "category": [
       "signature",
       "茶酒"
-    ]
+    ],
+    "file": "menuImg\\20240316-茶酒-鐵觀音.jpg",
+    "description": ""
   },
   {
-    "file": "menuImg\\20240316-Classic-GinTonic BOMBAY泰式香茅,香料味.jpg",
-    "description": "BOMBAY泰式香茅,香料味",
     "thumbnail": "menuImg\\20240316-Classic-GinTonic BOMBAY泰式香茅,香料味.jpg",
     "name": "Gin Tonic",
     "category": [
       "classic",
       "gin"
-    ]
+    ],
+    "file": "menuImg\\20240316-Classic-GinTonic BOMBAY泰式香茅,香料味.jpg",
+    "description": "BOMBAY泰式香茅,香料味"
   },
   {
-    "file": "menuImg\\20240329-茶酒-烏龍 伯爵.jpg",
-    "description": "",
     "thumbnail": "menuImg\\20240329-茶酒-烏龍 伯爵.jpg",
     "name": "烏龍茶、伯爵茶",
     "category": [
       "signature",
       "茶酒"
-    ]
+    ],
+    "file": "menuImg\\20240329-茶酒-烏龍 伯爵.jpg",
+    "description": ""
   },
   {
-    "file": "menuImg\\20240427-Classic-泥煤威士忌.jpg",
-    "description": "盤尼西林(待確認) 泥煤威士忌",
     "thumbnail": "menuImg\\20240427-Classic-泥煤威士忌.jpg",
     "name": "Penicillin",
     "category": [
       "classic",
       "whisky"
-    ]
+    ],
+    "file": "menuImg\\20240427-Classic-泥煤威士忌.jpg",
+    "description": "盤尼西林(待確認) 泥煤威士忌"
   },
   {
-    "file": "menuImg\\20240427-Classic-GinTonic(玫瑰).jpg",
-    "description": "玫瑰風味",
     "thumbnail": "menuImg\\20240427-Classic-GinTonic(玫瑰).jpg",
     "name": "Gin Tonic",
     "category": [
       "classic",
       "gin"
-    ]
+    ],
+    "file": "menuImg\\20240427-Classic-GinTonic(玫瑰).jpg",
+    "description": "玫瑰風味"
   },
   {
-    "file": "menuImg\\20240427-GinFizz.jpg",
-    "description": "Tanqueray坦奎瑞琴酒",
     "thumbnail": "menuImg\\20240427-GinFizz.jpg",
     "name": "Gin Fizz",
     "category": [
       "classic",
       "gin"
-    ]
+    ],
+    "file": "menuImg\\20240427-GinFizz.jpg",
+    "description": "Tanqueray坦奎瑞琴酒"
   },
   {
-    "file": "menuImg\\20240427-Special-吉娃娃(辣椒).jpg",
-    "description": "",
     "thumbnail": "menuImg\\20240427-Special-吉娃娃(辣椒).jpg",
     "name": "吉娃娃",
     "category": [
       "signature",
       "辣椒"
-    ]
+    ],
+    "file": "menuImg\\20240427-Special-吉娃娃(辣椒).jpg",
+    "description": ""
   },
   {
-    "file": "menuImg\\20240427-Special-咖啡(卡布奇諾).jpg",
-    "description": "",
     "thumbnail": "menuImg\\20240427-Special-咖啡(卡布奇諾).jpg",
     "name": "卡布奇諾",
     "category": [
       "signature",
       "咖啡",
       "卡布奇諾"
-    ]
+    ],
+    "file": "menuImg\\20240427-Special-咖啡(卡布奇諾).jpg",
+    "description": ""
   },
   {
-    "file": "menuImg\\20240503-水果-葡萄(白酒版).jpg",
-    "description": "白酒版本",
     "thumbnail": "menuImg\\20240503-水果-葡萄(白酒版).jpg",
     "name": "葡萄2024",
     "category": [
       "signature",
       "葡萄"
-    ]
+    ],
+    "file": "menuImg\\20240503-水果-葡萄(白酒版).jpg",
+    "description": "白酒版本"
   },
   {
-    "file": "menuImg\\20240518-水果-香蕉.jpg",
-    "description": "香蕉",
     "thumbnail": "menuImg\\20240518-水果-香蕉.jpg",
     "name": "香蕉2024",
     "category": [
       "signature",
       "香蕉"
-    ]
+    ],
+    "file": "menuImg\\20240518-水果-香蕉.jpg",
+    "description": "香蕉"
   },
   {
-    "file": "menuImg\\20240518-ShotLong-地獄殿(弱化版).jpg",
-    "description": "弱化版",
     "thumbnail": "menuImg\\20240518-ShotLong-地獄殿(弱化版).jpg",
     "name": "Long Shot",
     "category": [
       "shot",
       "longshot",
       "地獄版"
-    ]
+    ],
+    "file": "menuImg\\20240518-ShotLong-地獄殿(弱化版).jpg",
+    "description": "弱化版"
   },
   {
-    "file": "menuImg\\20240609-水果-西瓜.jpg",
-    "description": "西瓜",
     "thumbnail": "menuImg\\20240609-水果-西瓜.jpg",
     "name": "西瓜2024",
     "category": [
       "signature",
       "西瓜"
-    ]
+    ],
+    "file": "menuImg\\20240609-水果-西瓜.jpg",
+    "description": "西瓜"
   },
   {
-    "file": "menuImg\\20240609-茶酒-伯爵.jpg",
-    "description": "伯爵茶",
     "thumbnail": "menuImg\\20240609-茶酒-伯爵.jpg",
     "name": "伯爵茶",
     "category": [
       "signature",
       "茶酒 伯爵茶"
-    ]
+    ],
+    "file": "menuImg\\20240609-茶酒-伯爵.jpg",
+    "description": "伯爵茶"
   },
   {
-    "file": "menuImg\\20240609-Classic-柯夢波丹.jpg",
-    "description": "柯夢波丹",
     "thumbnail": "menuImg\\20240609-Classic-柯夢波丹.jpg",
     "name": "Cosmopolitan",
     "category": [
       "classic",
       "vodka",
       "君度橙酒"
-    ]
+    ],
+    "file": "menuImg\\20240609-Classic-柯夢波丹.jpg",
+    "description": "柯夢波丹"
   },
   {
-    "file": "menuImg\\20240609-Shot-冰淇淋.jpg",
-    "description": "牛奶冰淇淋",
     "thumbnail": "menuImg\\20240609-Shot-冰淇淋.jpg",
     "name": "Shot",
     "category": [
       "shot",
       "冰淇淋"
-    ]
+    ],
+    "file": "menuImg\\20240609-Shot-冰淇淋.jpg",
+    "description": "牛奶冰淇淋"
   },
   {
-    "file": "menuImg\\20240609-Shot-棉花糖 鳳梨 葡萄柚.jpg",
-    "description": "葡萄柚、棉花糖、鳳梨",
     "thumbnail": "menuImg\\20240609-Shot-棉花糖 鳳梨 葡萄柚.jpg",
     "name": "Shot",
     "category": [
@@ -997,83 +995,83 @@
       "葡萄柚",
       "棉花糖",
       "鳳梨"
-    ]
+    ],
+    "file": "menuImg\\20240609-Shot-棉花糖 鳳梨 葡萄柚.jpg",
+    "description": "葡萄柚、棉花糖、鳳梨"
   },
   {
-    "file": "menuImg\\20240622-Special-水燈.jpg",
-    "description": "14種基酒混和",
     "thumbnail": "menuImg\\20240622-Special-水燈.jpg",
     "name": "水燈",
     "category": [
       "signature"
-    ]
+    ],
+    "file": "menuImg\\20240622-Special-水燈.jpg",
+    "description": "14種基酒混和"
   },
   {
-    "file": "menuImg\\20240824-水果-火龍果.jpg",
-    "description": "火龍果",
     "thumbnail": "menuImg\\20240824-水果-火龍果.jpg",
     "name": "火龍果2024",
     "category": [
       "signature",
       "火龍果"
-    ]
+    ],
+    "file": "menuImg\\20240824-水果-火龍果.jpg",
+    "description": "火龍果"
   },
   {
-    "file": "menuImg\\20240824-水果-蘋果.jpg",
-    "description": "蘋果",
     "thumbnail": "menuImg\\20240824-水果-蘋果.jpg",
     "name": "蘋果2024",
     "category": [
       "signature",
       "蘋果"
-    ]
+    ],
+    "file": "menuImg\\20240824-水果-蘋果.jpg",
+    "description": "蘋果"
   },
   {
-    "file": "menuImg\\20240824-Special-金雞掰.jpg",
-    "description": "極限定款",
     "thumbnail": "menuImg\\20240824-Special-金雞掰.jpg",
     "name": "金雞掰咖啡",
     "category": [
       "signature",
       "黑芝麻",
       "芝麻"
-    ]
+    ],
+    "file": "menuImg\\20240824-Special-金雞掰.jpg",
+    "description": "極限定款"
   },
   {
-    "file": "menuImg\\20240913-水果-紅心芭樂-1.jpg",
-    "description": "紅心芭樂",
     "thumbnail": "menuImg\\20240913-水果-紅心芭樂-1.jpg",
     "name": "紅心芭樂2024",
     "category": [
       "signature",
       "紅心芭樂",
       "芭樂"
-    ]
+    ],
+    "file": "menuImg\\20240913-水果-紅心芭樂-1.jpg",
+    "description": "紅心芭樂"
   },
   {
-    "file": "menuImg\\20240913-水果-酒釀櫻桃-1.jpg",
-    "description": "酒釀櫻桃",
     "thumbnail": "menuImg\\20240913-水果-酒釀櫻桃-1.jpg",
     "name": "酒釀櫻桃2024",
     "category": [
       "signature",
       "酒釀櫻桃"
-    ]
+    ],
+    "file": "menuImg\\20240913-水果-酒釀櫻桃-1.jpg",
+    "description": "酒釀櫻桃"
   },
   {
-    "file": "menuImg\\20240913-茶酒-茉莉綠茶.jpg",
-    "description": "茉莉綠茶",
     "thumbnail": "menuImg\\20240913-茶酒-茉莉綠茶.jpg",
     "name": "茉莉綠茶",
     "category": [
       "signature",
       "茉莉綠茶",
       "茶酒"
-    ]
+    ],
+    "file": "menuImg\\20240913-茶酒-茉莉綠茶.jpg",
+    "description": "茉莉綠茶"
   },
   {
-    "file": "menuImg\\20240913-ShotLong-蘋果紫蘇葉.jpg",
-    "description": "紫蘇葉包蘋果",
     "thumbnail": "menuImg\\20240913-ShotLong-蘋果紫蘇葉.jpg",
     "name": "Long Shot",
     "category": [
@@ -1081,51 +1079,51 @@
       "shot",
       "蘋果",
       "紫蘇葉"
-    ]
+    ],
+    "file": "menuImg\\20240913-ShotLong-蘋果紫蘇葉.jpg",
+    "description": "紫蘇葉包蘋果"
   },
   {
-    "file": "menuImg\\20241018-水果-文旦-1.jpg",
-    "description": "文旦",
     "thumbnail": "menuImg\\20241018-水果-文旦-1.jpg",
     "name": "文旦2025",
     "category": [
       "signature",
       "文旦"
-    ]
+    ],
+    "file": "menuImg\\20241018-水果-文旦-1.jpg",
+    "description": "文旦"
   },
   {
-    "file": "menuImg\\20241025-Classic-曼哈頓.jpg",
-    "description": "曼哈頓 雞尾酒之后",
     "thumbnail": "menuImg\\20241025-Classic-曼哈頓.jpg",
     "name": "Manhattan",
     "category": [
       "classic",
       "whisky"
-    ]
+    ],
+    "file": "menuImg\\20241025-Classic-曼哈頓.jpg",
+    "description": "曼哈頓 雞尾酒之后"
   },
   {
-    "file": "menuImg\\20241025-Classic-GinTonic花香.jpg",
-    "description": "G'Vine紀凡琴酒 花果香",
     "thumbnail": "menuImg\\20241025-Classic-GinTonic花香.jpg",
     "name": "Gin Tonic",
     "category": [
       "classic",
       "gin"
-    ]
+    ],
+    "file": "menuImg\\20241025-Classic-GinTonic花香.jpg",
+    "description": "G'Vine紀凡琴酒 花果香"
   },
   {
-    "file": "menuImg\\20241116-水果-西洋梨.jpg",
-    "description": "",
     "thumbnail": "menuImg\\20241116-水果-西洋梨.jpg",
     "name": "西洋梨2025",
     "category": [
       "signature",
       "西洋梨"
-    ]
+    ],
+    "file": "menuImg\\20241116-水果-西洋梨.jpg",
+    "description": ""
   },
   {
-    "file": "menuImg\\20241116-LongShot.jpg",
-    "description": "紫蘇葉包蘋果",
     "thumbnail": "menuImg\\20241116-LongShot.jpg",
     "name": "Long Shot",
     "category": [
@@ -1133,164 +1131,164 @@
       "shot",
       "蘋果",
       "紫蘇葉"
-    ]
+    ],
+    "file": "menuImg\\20241116-LongShot.jpg",
+    "description": "紫蘇葉包蘋果"
   },
   {
-    "file": "menuImg\\20241129_LongShot香吉士.jpg",
-    "description": "香吉士",
     "thumbnail": "menuImg\\20241129_LongShot香吉士.jpg",
     "name": "Long Shot",
     "category": [
       "shot",
       "longshot",
       "香吉士"
-    ]
+    ],
+    "file": "menuImg\\20241129_LongShot香吉士.jpg",
+    "description": "香吉士"
   },
   {
-    "file": "menuImg\\20241129_Silent Third.jpg",
-    "description": "沉默的第三者",
     "thumbnail": "menuImg\\20241129_Silent Third.jpg",
     "name": "Silent Third",
     "category": [
       "classic",
       "whisky"
-    ]
+    ],
+    "file": "menuImg\\20241129_Silent Third.jpg",
+    "description": "沉默的第三者"
   },
   {
-    "file": "menuImg\\20241207_美國蜜李.jpg",
-    "description": "美國蜜李",
     "thumbnail": "menuImg\\20241207_美國蜜李.jpg",
     "name": "美國蜜李",
     "category": [
       "signature",
       "美國蜜李"
-    ]
+    ],
+    "file": "menuImg\\20241207_美國蜜李.jpg",
+    "description": "美國蜜李"
   },
   {
-    "file": "menuImg\\20241207_椪柑.jpg",
-    "description": "椪柑",
     "thumbnail": "menuImg\\20241207_椪柑.jpg",
     "name": "椪柑2025",
     "category": [
       "signature",
       "椪柑"
-    ]
+    ],
+    "file": "menuImg\\20241207_椪柑.jpg",
+    "description": "椪柑"
   },
   {
-    "file": "menuImg\\20250125_GinTonic葡萄香氣.jpg",
-    "description": "葡萄香氣 HOPE南非工藝琴酒",
     "thumbnail": "menuImg\\20250125_GinTonic葡萄香氣.jpg",
     "name": "Gin Tonic",
     "category": [
       "classic",
       "gin"
-    ]
+    ],
+    "file": "menuImg\\20250125_GinTonic葡萄香氣.jpg",
+    "description": "葡萄香氣 HOPE南非工藝琴酒"
   },
   {
-    "file": "menuImg\\20250125_HighBall.jpg",
-    "description": "皇家柏克萊Royal Brackla",
     "thumbnail": "menuImg\\20250125_HighBall.jpg",
     "name": "HighBall",
     "category": [
       "classic",
       "whisky"
-    ]
+    ],
+    "file": "menuImg\\20250125_HighBall.jpg",
+    "description": "皇家柏克萊Royal Brackla"
   },
   {
-    "file": "menuImg\\20250125_shot_葡萄柚.jpg",
-    "description": "葡萄柚",
     "thumbnail": "menuImg\\20250125_shot_葡萄柚.jpg",
     "name": "Shot",
     "category": [
       "shot",
       "葡萄柚"
-    ]
+    ],
+    "file": "menuImg\\20250125_shot_葡萄柚.jpg",
+    "description": "葡萄柚"
   },
   {
-    "file": "menuImg\\20250125-Classic-拉佛格計畫.jpg",
-    "description": "拉佛格計畫 泥煤香氣",
     "thumbnail": "menuImg\\20250125-Classic-拉佛格計畫.jpg",
     "name": "Laphoraig",
     "category": [
       "classic",
       "whisky"
-    ]
+    ],
+    "file": "menuImg\\20250125-Classic-拉佛格計畫.jpg",
+    "description": "拉佛格計畫 泥煤香氣"
   },
   {
-    "file": "menuImg\\20250125-Classic-花花公子.jpg",
-    "description": "花花公子",
     "thumbnail": "menuImg\\20250125-Classic-花花公子.jpg",
     "name": "Boulevardier",
     "category": [
       "classic",
       "whisky"
-    ]
+    ],
+    "file": "menuImg\\20250125-Classic-花花公子.jpg",
+    "description": "花花公子"
   },
   {
-    "file": "menuImg\\20250208_百香果.jpg",
-    "description": "百香果",
     "thumbnail": "menuImg\\20250208_百香果.jpg",
     "name": "百香果2025",
     "category": [
       "signature",
       "百香果"
-    ]
+    ],
+    "file": "menuImg\\20250208_百香果.jpg",
+    "description": "百香果"
   },
   {
-    "file": "menuImg\\20250208_金萱茶Shot.jpg",
-    "description": "金萱茶",
     "thumbnail": "menuImg\\20250208_金萱茶Shot.jpg",
     "name": "Shot",
     "category": [
       "shot",
       "金萱茶",
       "茶"
-    ]
+    ],
+    "file": "menuImg\\20250208_金萱茶Shot.jpg",
+    "description": "金萱茶"
   },
   {
-    "file": "menuImg\\20250208_綠茶.jpg",
-    "description": "綠茶",
     "thumbnail": "menuImg\\20250208_綠茶.jpg",
     "name": "綠茶2025",
     "category": [
       "signature",
       "綠茶",
       "茶酒"
-    ]
+    ],
+    "file": "menuImg\\20250208_綠茶.jpg",
+    "description": "綠茶"
   },
   {
-    "file": "menuImg\\20250208_櫻桃.jpg",
-    "description": "櫻桃",
     "thumbnail": "menuImg\\20250208_櫻桃.jpg",
     "name": "櫻桃2025",
     "category": [
       "signature",
       "櫻桃"
-    ]
+    ],
+    "file": "menuImg\\20250208_櫻桃.jpg",
+    "description": "櫻桃"
   },
   {
-    "file": "menuImg\\20250208_Jasmine.jpg",
-    "description": "",
     "thumbnail": "menuImg\\20250208_Jasmine.jpg",
     "name": "茉莉Jasmine",
     "category": [
       "classic",
       "gin"
-    ]
+    ],
+    "file": "menuImg\\20250208_Jasmine.jpg",
+    "description": ""
   },
   {
-    "file": "menuImg\\20250228_草莓.jpg",
-    "description": "草莓",
     "thumbnail": "menuImg\\20250228_草莓.jpg",
     "name": "草莓2025",
     "category": [
       "signature",
       "草莓"
-    ]
+    ],
+    "file": "menuImg\\20250228_草莓.jpg",
+    "description": "草莓"
   },
   {
-    "file": "menuImg\\20250228_馬丁尼 包種茶琴酒.jpg",
-    "description": "包種茶琴酒",
     "thumbnail": "menuImg\\20250228_馬丁尼 包種茶琴酒.jpg",
     "name": "包種茶馬丁尼Martine",
     "category": [
@@ -1298,26 +1296,48 @@
       "gin",
       "包種茶",
       "茶酒"
-    ]
+    ],
+    "file": "menuImg\\20250228_馬丁尼 包種茶琴酒.jpg",
+    "description": "包種茶琴酒"
   },
   {
-    "file": "menuImg\\20250315_宜蘭金棗.jpg",
-    "description": "宜蘭金棗",
     "thumbnail": "menuImg\\20250315_宜蘭金棗.jpg",
     "name": "宜蘭金棗",
     "category": [
       "signature",
       "金棗"
-    ]
+    ],
+    "file": "menuImg\\20250315_宜蘭金棗.jpg",
+    "description": "宜蘭金棗"
   },
   {
-    "file": "menuImg\\20250315_智利黑李.jpg",
-    "description": "智利黑李",
     "thumbnail": "menuImg\\20250315_智利黑李.jpg",
     "name": "智利黑李",
     "category": [
       "signature",
       "黑李"
-    ]
+    ],
+    "file": "menuImg\\20250315_智利黑李.jpg",
+    "description": "智利黑李"
+  },
+  {
+    "thumbnail": "menuImg\\20250403_情人果.jpg",
+    "name": "情人果",
+    "category": [
+      "signature",
+      "情人果"
+    ],
+    "file": "menuImg\\20250403_情人果.jpg",
+    "description": ""
+  },
+  {
+    "thumbnail": "menuImg\\20250403_葡萄柚.jpg",
+    "name": "葡萄柚",
+    "category": [
+      "signature",
+      "葡萄柚"
+    ],
+    "file": "menuImg\\20250403_葡萄柚.jpg",
+    "description": ""
   }
 ]
