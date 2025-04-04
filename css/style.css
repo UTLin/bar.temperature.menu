@@ -340,9 +340,9 @@ textarea {
     top: 0;
     right: 0;
     height: 100vh;
-    width: 400px;
+    width: 350px;
     color: white;
-    transform: translateX(80%);
+    transform: translateX(100%);
     transition: transform 0.3s ease;
     z-index: 1050;
 }

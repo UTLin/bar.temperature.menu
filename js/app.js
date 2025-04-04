@@ -18,8 +18,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // toggle sidebar
     const orderSidebar = document.getElementById("order-sidebar");
+    const sidebarBackground = document.getElementById("order-sidebar-background");
     document.getElementById("toggle-order").addEventListener("click", () => {
         orderSidebar.classList.toggle("open");
+        if (orderSidebar.classList.contains("open")) {
+            sidebarBackground.style.display = "block";
+        } else {
+            sidebarBackground.style.display = "none";
+        }
     });
 
     // ===== 本周水果標籤動畫 =====
@@ -241,6 +247,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // 加入點酒
     let pendingDrinkName = null;
     document.addEventListener("click", function (e) {
+        console.log(e.target.id);
         if (e.target.classList.contains("add-to-order")) {
             // 點酒按鈕觸發 modal
             pendingDrinkName = e.target.dataset.name;
@@ -326,6 +333,16 @@ document.addEventListener("DOMContentLoaded", function () {
             saveOrderBook(book);
             renderAccountSelector();
             renderOrderList();
+        }
+
+        // 點擊背景也可以關閉sidebar
+        if (e.target.id === "order-sidebar-background") {
+            orderSidebar.classList.toggle("open");
+            if (orderSidebar.classList.contains("open")) {
+                sidebarBackground.style.display = "block";
+            } else {
+                sidebarBackground.style.display = "none";
+            }
         }
     });
 
