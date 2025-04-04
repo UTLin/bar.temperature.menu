@@ -232,9 +232,9 @@ textarea {
 
 /* 調整分類按鈕 */
 .btn-group .btn {
-    min-width: 100px;
+    min-width: 80px;
     padding: 10px 15px;
-    font-size: 1rem;
+    font-size: small;
     border-radius: 5px;
     margin: 5px;
     background: rgba(255, 255, 255, 0.2);
@@ -246,6 +246,17 @@ textarea {
 .btn-group .btn.active {
     background: rgba(255, 255, 255, 0.4);
     color: black;
+}
+
+.scrollable-btn-group {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none; /* Firefox 隱藏滾動條 */
+}
+
+.scrollable-btn-group::-webkit-scrollbar {
+    display: none; /* Chrome 隱藏滾動條 */
 }
 
 .menu-item {
